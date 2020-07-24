@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/colorPrimaryDark"
+    android:paddingBottom="75dp">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="40dp"
+        android:background="@drawable/bg_11">
+
+        <include layout="@layout/toolbar" />
+
+        <LinearLayout
+            android:layout_below="@+id/toolbar"
+            android:id="@+id/linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:orientation="horizontal"
+            android:layoutDirection="ltr"
+            android:layout_marginTop="12dp"
+            android:paddingTop="8dp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/is_not_global"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="@drawable/bg_1"
+                android:layout_marginRight="6dp"
+                android:gravity="center"
+                android:text="آزمون جامع"
+                android:padding="8dp"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/is_global"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:text="آزمون ساز"
+                android:padding="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_10"
+                android:layout_marginLeft="6dp"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/random_quiz_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_8"
+        android:paddingTop="48dp"
+        android:layout_below="@+id/top"
+        android:layout_margin="24dp">
+
+        <EditText
+            android:id="@+id/q_number"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:inputType="number"
+            android:textSize="16dp"
+            android:hint="تعداد سوالات"
+            android:textColorHint="@color/transparent_2"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"/>
+
+        <Spinner
+            android:id="@+id/spinner_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/q_number"
+            android:textDirection="rtl"
+            android:textAlignment="viewStart"
+            android:layout_marginTop="2dp"
+            android:layout_alignLeft="@id/q_number"
+            android:layout_below="@+id/q_number"/>
+
+        <Spinner
+            android:id="@+id/spinner_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/q_number"
+            android:layout_alignLeft="@id/q_number"
+            android:layout_below="@+id/spinner_one"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/q_number"
+            android:layout_alignLeft="@id/q_number"
+            android:layout_below="@+id/spinner_two"
+            android:text="شروع آزمون"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:layout_margin="24dp"
+            android:background="@drawable/bg_3"/>
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/complete_quiz_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_below="@id/top" />
+
+</RelativeLayout>

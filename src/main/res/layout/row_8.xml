@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/bg_1">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/lesson_logo"
+                android:layout_width="56dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="56dp"/>
+
+            <TextView
+                android:id="@+id/lesson_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lesson_logo"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:textSize="13dp"
+                android:textColor="@color/colorPrimaryDark" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

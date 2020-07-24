@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorPrimaryDark">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_6"
+        android:paddingBottom="260dp">
+
+        <include layout="@layout/toolbar" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/slide_relative_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-25dp"
+        android:background="@drawable/bg_5"
+        android:gravity="center_vertical"
+        android:layoutDirection="ltr"
+        android:minWidth="150dp"
+        android:paddingStart="16dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="24dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/bg_3" />
+
+            <TextView
+                android:id="@+id/title_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/bg_3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear123"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="-16dp"
+            android:background="@drawable/bg_1"
+            android:orientation="horizontal"
+            android:paddingRight="24dp">
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_18"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/as"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="از"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/what_part_number"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_18"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/what_part"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="-16dp"
+                android:paddingStart="12dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="36dp"
+                android:paddingBottom="4dp"
+                android:text="قسمت"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/slide_relative_text"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="-70dp"
+        android:background="@drawable/bg_2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="70dp"
+                android:orientation="horizontal"
+                android:layoutDirection="ltr"
+                android:paddingLeft="30dp">
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/bg_3" />
+
+                <TextView
+                    android:id="@+id/title12345"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:text="نظرات | "
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-70dp"
+                app:cardBackgroundColor="@color/blue_three"
+                app:cardCornerRadius="84dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="70dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/get_quiz"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-35dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="36dp"
+                        android:background="@drawable/edit_text_3"
+                        android:paddingLeft="24dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="24dp"
+                        android:paddingBottom="8dp"
+                        android:text="برای شروع آزمون پایان بخش این قسمت کلیک کنید!"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+
+                    <EditText
+                        android:id="@+id/add_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-35dp"
+                        android:layout_marginRight="36dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/edit_text_3"
+                        android:hint="لطفا نظر خود را وارد نمایید!"
+                        android:paddingLeft="24dp"
+                        android:paddingTop="8dp"
+                        android:textSize="14dp"
+                        android:paddingRight="24dp"
+                        android:paddingBottom="8dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white" />
+
+                    <Tools.OverRecyclerView
+                        android:id="@+id/comment_recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:paddingBottom="70dp"
+                        android:clipToPadding="false"
+                        android:overScrollMode="never" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/submit"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:useCompatPadding="true"
+        android:src="@drawable/ic_check_black_24dp" />
+
+    <include
+        layout="@layout/player"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginRight="40dp"
+        android:layout_below="@+id/toolbar" />
+
+</RelativeLayout>
+

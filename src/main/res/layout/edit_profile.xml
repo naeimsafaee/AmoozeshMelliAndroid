@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/code">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30dp"
+        android:background="@drawable/bg_17">
+
+        <include layout="@layout/toolbar" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_below="@id/top">
+
+
+        <EditText
+            android:id="@+id/fullName_et"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="نام و نام خانوادگی"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:layout_marginBottom="20dp"
+            android:paddingRight="24dp"
+            android:paddingLeft="24dp"
+            android:background="@drawable/edit_text_1" />
+
+        <Spinner
+            android:id="@+id/spinner_one"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" />
+
+        <Spinner
+            android:id="@+id/spinner_two"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ثبت"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16dp"
+            android:background="@drawable/bg_1" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

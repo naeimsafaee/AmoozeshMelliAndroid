@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#729bb1</color>
+    <color name="colorPrimaryDark">#447a96</color>
+    <color name="colorAccent">#ccdbe2</color>
+
+    <color name="blue_one">#ccdadd</color>
+    <color name="blue_two">#aac1d3</color>
+    <color name="blue_three">#aac0d5</color>
+
+
+    <color name="white">#fff</color>
+
+    <color name="transparent">#00FFFFFF</color>
+    <color name="transparent_1">#68729BB1</color>
+    <color name="transparent_2">#DA447A96</color>
+
+    <color name="sweet_dialog_bg_color">#729bb1</color>
+
+    <color name="gray_btn_bg_color">#447a96</color>
+    <color name="gray_btn_bg_pressed_color">#447a96</color>
+    <color name="blue_btn_bg_color">#447a96</color>
+    <color name="blue_btn_bg_pressed_color">#447a96</color>
+    <color name="red_btn_bg_color">#447a96</color>
+    <color name="red_btn_bg_pressed_color">#447a96</color>
+
+</resources>

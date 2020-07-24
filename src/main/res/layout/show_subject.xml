@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/bg_6">
+
+        <include layout="@layout/toolbar" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            app:cardBackgroundColor="@color/colorAccent"
+            android:layout_marginRight="-45dp"
+            android:layout_below="@+id/toolbar"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="0dp">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs"
+                android:layout_marginTop="15dp"
+                android:layoutDirection="ltr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabGravity="fill"
+                app:tabInlineLabel="true"
+                app:tabIndicator="@drawable/bg_3"
+                app:tabIndicatorColor="@color/colorPrimaryDark"
+                app:tabIndicatorFullWidth="true"
+                app:tabIndicatorGravity="stretch"
+                app:tabIndicatorHeight="54dp"
+                app:tabMode="scrollable"
+                android:paddingRight="24dp"
+                android:layout_marginRight="45dp"
+                android:clipToPadding="false"
+                app:tabRippleColor="@color/transparent"
+                app:tabTextColor="@color/white" />
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_8"
+        android:layout_below="@+id/top"
+        android:layout_margin="24dp">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:orientation="horizontal"
+            android:layoutDirection="ltr"
+            android:layout_marginTop="12dp"
+            android:paddingTop="8dp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/is_not_global"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="اساتید استانی"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/is_global"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:text="اساتید کشوری"
+                android:padding="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_10"
+                android:layout_marginLeft="6dp"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/linear"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/pyramid_one"
+                    android:layout_width="36dp"
+                    android:layout_height="24dp"
+                    android:visibility="invisible"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/ic_arrow_drop_up"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/pyramid_two"
+                    android:layout_width="36dp"
+                    android:layout_height="24dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/ic_arrow_drop_up"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/teacher_recyclerview"
+            android:layout_below="@id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_9"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="12dp"
+            android:padding="12dp" />
+
+        <TextView
+            android:id="@+id/teacherIsEmpty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="استادی وجود ندارد!"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16dp"
+            android:layout_centerHorizontal="true"
+            android:padding="12dp"
+            android:visibility="invisible"
+            android:layout_marginTop="12dp"
+            android:layout_below="@id/linear1"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
