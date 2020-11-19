@@ -76,17 +76,37 @@ public class QuizAdapter extends RecyclerView.Adapter<QuizAdapter.MyViewHolder> 
         });
 
 //        holder.radioGroup.clearCheck();
-        if (items.get(position).getAnswered_question() != 0){
-            holder.radioGroup.check(items.get(position).getAnswered_question());
+        if (items.get(position).getAnswered_question() != 0) {
+//            holder.radioGroup.check(items.get(position).getAnswered_question());
         } else {
-            holder.radioGroup.clearCheck();
+//            holder.radioGroup.clearCheck();
         }
-        Log.e("Options" , "position : " + position + " / " + items.get(position).getAnswered_question());
+        Log.e("Options", "position : " + position + " / " + items.get(position).getAnswered_question());
 
         holder.radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
 
                 items.get(position).setAnswered_question(checkedId);
+
+                if (checkedId == -1) {
+//                    if (items.get(position).getAnswered_question() != 0) {
+//                        holder.radioGroup.check(items.get(position).getAnswered_question());
+//                    } else
+                    BaseActivity.getInstace().mainAnswer[position] = 0;
+                } else if (checkedId == R.id.radio_one) {
+
+                    BaseActivity.getInstace().mainAnswer[position] =
+                            items.get(position).getOptions().get(0).getID();
+                } else if (checkedId == R.id.radio_two) {
+                    BaseActivity.getInstace().mainAnswer[position] =
+                            items.get(position).getOptions().get(1).getID();
+                } else if (checkedId == R.id.radio_three) {
+                    BaseActivity.getInstace().mainAnswer[position] =
+                            items.get(position).getOptions().get(2).getID();
+                } else if (checkedId == R.id.radio_four) {
+                    BaseActivity.getInstace().mainAnswer[position] =
+                            items.get(position).getOptions().get(3).getID();
+                }
             }
         });
 

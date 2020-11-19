@@ -13,16 +13,16 @@ public class Comment {
     @SerializedName("user")
     private User user;
 
+
+    private Comment my_reply;
+
     public Comment getReply() {
-        return reply;
+        return my_reply;
     }
 
     public void setReply(Comment reply) {
-        this.reply = reply;
+        this.my_reply = reply;
     }
-
-    private Comment reply;
-
 
     public int getID() {
         return ID;

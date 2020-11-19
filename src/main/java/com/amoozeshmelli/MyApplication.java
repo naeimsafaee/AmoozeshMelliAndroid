@@ -335,16 +335,8 @@ public class MyApplication extends Application implements
 
                         Log.e("Click" , "Clicked");
 
-                        question_title_image.invalidate();
-                        BitmapDrawable drawable = (BitmapDrawable) question_title_image.getDrawable();
-                        Bitmap bitmap = drawable.getBitmap();
-
-                        ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                        bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
-                        byte[] byteArray = stream.toByteArray();
-
                         Intent intent = new Intent(context, ShowPhotoActivity.class);
-                        intent.putExtra("picture", byteArray);
+                        intent.putExtra("image", questionPart.getImageTitleUrl());
                         context.startActivity(intent);
                     }
                 });
@@ -368,16 +360,8 @@ public class MyApplication extends Application implements
 
                             Log.e("Click" , "Clicked");
 
-                            helper_question_title_image.invalidate();
-                            BitmapDrawable drawable = (BitmapDrawable) helper_question_title_image.getDrawable();
-                            Bitmap bitmap = drawable.getBitmap();
-
-                            ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                            bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
-                            byte[] byteArray = stream.toByteArray();
-
                             Intent intent = new Intent(context, ShowPhotoActivity.class);
-                            intent.putExtra("picture", byteArray);
+                            intent.putExtra("image", questionPart.getImageTitleUrl());
                             context.startActivity(intent);
                         }
                     });
@@ -401,6 +385,7 @@ public class MyApplication extends Application implements
 
                 Glide.with(context)
                         .load(questionPart.getOptions().get(i).getImageUrl())
+                        .diskCacheStrategy(DiskCacheStrategy.ALL)
                         .into(options_image_view[i]);
 
                 final int finalI = i;
@@ -413,22 +398,15 @@ public class MyApplication extends Application implements
                     }
                 });
 
+                final int finalI1 = i;
                 options_image_view[i].setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
 
                         Log.e("Click" , "Clicked");
 
-                        options_image_view[finalI].invalidate();
-                        BitmapDrawable drawable = (BitmapDrawable) options_image_view[finalI].getDrawable();
-                        Bitmap bitmap = drawable.getBitmap();
-
-                        ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                        bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
-                        byte[] byteArray = stream.toByteArray();
-
                         Intent intent = new Intent(context, ShowPhotoActivity.class);
-                        intent.putExtra("picture", byteArray);
+                        intent.putExtra("image", questionPart.getOptions().get(finalI1).getImageUrl());
                         context.startActivity(intent);
                     }
                 });

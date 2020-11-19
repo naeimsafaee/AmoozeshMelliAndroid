@@ -187,6 +187,7 @@ public class Advertise extends TransitionHelper.BaseFragment {
                         .addHeaders("Accept", "application/json")
                         .addHeaders("Authorization", "Bearer " + MyApplication.token)
                         .setPriority(Priority.HIGH)
+                        .setTag("advertise")
                         .build()
                         .getAsJSONObject(new JSONObjectRequestListener() {
                             @Override
@@ -204,6 +205,8 @@ public class Advertise extends TransitionHelper.BaseFragment {
 
                                     mkPlayer.play(advertise.getVideo_url());
 //                                    mkPlayer.playInFullScreen(true);
+                                    /*if(getActivity() == null)
+                                        return;*/
                                     BaseActivity.of(getActivity()).bottomNavigation.setVisibility(View.GONE);
 
                                     view.findViewById(R.id.progress_circular).setVisibility(View.GONE);
@@ -281,6 +284,12 @@ public class Advertise extends TransitionHelper.BaseFragment {
         super.onDestroy();
         mkPlayer.onDestroy();
         Log.e("Fragments", "Advertise Destroyed!");
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        AndroidNetworking.forceCancel("advertise");
     }
 
     public Context getContext() {

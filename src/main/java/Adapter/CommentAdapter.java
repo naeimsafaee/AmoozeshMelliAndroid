@@ -1,6 +1,8 @@
 package Adapter;
 
 import android.content.Context;
+import android.os.Build;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -49,7 +51,13 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.MyViewHo
         if(items.get(position).getReply() != null){
             holder.reply_to_comment_text.setVisibility(View.VISIBLE);
             holder.reply_to_comment_name.setVisibility(View.VISIBLE);
-            holder.reply_to_comment_text.setText(items.get(position).getReply().getText());
+
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                holder.reply_to_comment_text.setText(Html.fromHtml(items.get(position).getReply().getText(), Html.FROM_HTML_MODE_COMPACT));
+            } else {
+                holder.reply_to_comment_text.setText(Html.fromHtml(items.get(position).getReply().getText()));
+            }
+
             holder.reply_to_comment_name.setText(items.get(position).getReply().getUser().getFullName());
         } else{
             holder.reply_to_comment_text.setVisibility(View.GONE);

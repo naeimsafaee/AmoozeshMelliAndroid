@@ -235,6 +235,13 @@ public class ShowVideo extends TransitionHelper.BaseFragment {
 
         commentAdapter = new CommentAdapter(getContext(), MainComments);
 
+        commentAdapter.setOnItemClickListener(new CommentAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(int position) {
+
+            }
+        });
+
         RecyclerView comment_recycler_view = view.findViewById(R.id.comment_recyclerView);
         comment_recycler_view.setLayoutManager(new LinearLayoutManager(getContext()));
 

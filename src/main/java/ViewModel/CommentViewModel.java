@@ -68,7 +68,7 @@ public class CommentViewModel extends ViewModel {
                                 Comment reply = null;
 
                                 if(!response.getJSONArray("data")
-                                        .getJSONObject(i).getString("reply_to").equals("null")){
+                                        .getJSONObject(i).getString("reply").equals("null")){
                                     reply = new Gson().fromJson(
                                             response.getJSONArray("data").getJSONObject(i).getJSONObject("reply").toString(), Comment.class);
                                 }

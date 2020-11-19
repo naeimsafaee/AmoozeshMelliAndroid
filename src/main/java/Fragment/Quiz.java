@@ -173,8 +173,8 @@ public class Quiz extends TransitionHelper.BaseFragment {
 
         RecyclerView recyclerView = view.findViewById(R.id.quiz_recyclerview);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        recyclerView.setItemViewCacheSize(271);
         recyclerView.setAdapter(quizAdapter);
-
 
         quiz_title.setTypeface(MyApplication.getMyTypeFaceMedium(getContext()));
         number_of_question.setTypeface(MyApplication.getMyTypeFaceMedium(getContext()));

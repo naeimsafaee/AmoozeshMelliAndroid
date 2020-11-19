@@ -136,7 +136,8 @@ public class EditProfile extends TransitionHelper.BaseFragment {
 
                                 Toast.makeText(getContext(), "مشخصات با موفقیت ثبت شد!", Toast.LENGTH_SHORT).show();
 
-                                BaseActivity.of(getActivity()).onBackPressed();
+                                MyApplication.restartApp(getContext());
+//                                BaseActivity.of(getActivity()).onBackPressed();
                             }
 
                             @Override
