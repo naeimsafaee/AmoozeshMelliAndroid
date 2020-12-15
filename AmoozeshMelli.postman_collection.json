@@ -1,0 +1,4109 @@
+{
+	"info": {
+		"_postman_id": "b13b61b1-4170-4f30-9f1d-39885b15b577",
+		"name": "teaching",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone",
+									"value": "09129612721",
+									"type": "text"
+								},
+								{
+									"key": "grade_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "city_id",
+									"value": "1",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/register",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "verify_sms",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone",
+									"value": "09128548353",
+									"type": "text"
+								},
+								{
+									"key": "code",
+									"value": "5454",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/verify_sms",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"verify_sms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone",
+									"value": "09358548353",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "https://api.amoozeshmelli.com/api/v1/login",
+							"protocol": "https",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get user info",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTI1NGE3NzkwZmQxNmM0ODFlZDcwNTFjNjg0NDA2OTI5ZTVkM2I2Y2E4MDE2ZDlmMTU1MTI5NzA2MTUxZWZhNmI1ZjY3Y2YxNDNmNzIwMGUiLCJpYXQiOjE1ODk1MzMyMzIsIm5iZiI6MTU4OTUzMzIzMiwiZXhwIjoxNjIxMDY5MjMyLCJzdWIiOiIxMSIsInNjb3BlcyI6WyJ1c2VyIl19.R8ESWkUnul_VYqkjxDzQ0kzPi65SZ0kE1RKq3BHQuTakHYO4EllZMk5rntk4Etj6bg_3nSxhx6qEmqOwazmXcKYKSnWnBEypRAGTcnbNo8aTk-zdkGjSN3vYIJionGkT2r2WoJxUWfhBBc165zAE29_AzvpIAcqGrlFeM5C93hIcv4_uyD2f7sJr07c7-7FRvF0AFEDW4c0hzE3DSBDVs6Jhr5FHHB8iX9l2Q2YQCz5mGKFnYYU1ksHFHD-x8IOcXkbf6OTrClbADNeGAS8FrahDoV1-ze3aEHs1rfzlhlar4Arb0lcSrHHHXOcn1sPQBcHlUoLghd3ozPquHASCrFFrLeIemHIZvR9lkXCmhNh7P6nCdLfB8BmDhuOKJ8eS4d8Ox7tLwrizS6rtKSBnH6ESwK7f1dpskF8tu1PwD8wC02IYLvsMPhC6LKo28Zfm5Kga2WgqVpb6aUL6Qv_86SH2mQ-q6NOzuozBJ1PzI2znQKoS56YjQ5Q2NhHVpFFaMlvth_q5WAVMeJzbMcXWJSU8Nc-HvVj86zbrRF8okwue66YLreGVa2hYn60u_ZyaSVnw1TQAZ1Eq72zYPy2oXXNkByl8qwHFQihFMSrcpn8AHVHOCyjmbxjPx6_Plx4P0zd2slr6q-YK9lGQldlbyqcTqFH3hF-dGMQp1an_iL4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "https://api.amoozeshmelli.com/api/v1/profile",
+							"protocol": "https",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "dargah",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTI1NGE3NzkwZmQxNmM0ODFlZDcwNTFjNjg0NDA2OTI5ZTVkM2I2Y2E4MDE2ZDlmMTU1MTI5NzA2MTUxZWZhNmI1ZjY3Y2YxNDNmNzIwMGUiLCJpYXQiOjE1ODk1MzMyMzIsIm5iZiI6MTU4OTUzMzIzMiwiZXhwIjoxNjIxMDY5MjMyLCJzdWIiOiIxMSIsInNjb3BlcyI6WyJ1c2VyIl19.R8ESWkUnul_VYqkjxDzQ0kzPi65SZ0kE1RKq3BHQuTakHYO4EllZMk5rntk4Etj6bg_3nSxhx6qEmqOwazmXcKYKSnWnBEypRAGTcnbNo8aTk-zdkGjSN3vYIJionGkT2r2WoJxUWfhBBc165zAE29_AzvpIAcqGrlFeM5C93hIcv4_uyD2f7sJr07c7-7FRvF0AFEDW4c0hzE3DSBDVs6Jhr5FHHB8iX9l2Q2YQCz5mGKFnYYU1ksHFHD-x8IOcXkbf6OTrClbADNeGAS8FrahDoV1-ze3aEHs1rfzlhlar4Arb0lcSrHHHXOcn1sPQBcHlUoLghd3ozPquHASCrFFrLeIemHIZvR9lkXCmhNh7P6nCdLfB8BmDhuOKJ8eS4d8Ox7tLwrizS6rtKSBnH6ESwK7f1dpskF8tu1PwD8wC02IYLvsMPhC6LKo28Zfm5Kga2WgqVpb6aUL6Qv_86SH2mQ-q6NOzuozBJ1PzI2znQKoS56YjQ5Q2NhHVpFFaMlvth_q5WAVMeJzbMcXWJSU8Nc-HvVj86zbrRF8okwue66YLreGVa2hYn60u_ZyaSVnw1TQAZ1Eq72zYPy2oXXNkByl8qwHFQihFMSrcpn8AHVHOCyjmbxjPx6_Plx4P0zd2slr6q-YK9lGQldlbyqcTqFH3hF-dGMQp1an_iL4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "amount",
+									"value": "20000",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "https://api.amoozeshmelli.com/api/v1/increase_wallet",
+							"protocol": "https",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"increase_wallet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "admin login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone",
+									"value": "09358548353",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "naeim",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/login_admin",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"login_admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone",
+									"value": "09358548353",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "naeim",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/add_admin",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"add_admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "check token",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGJjZTY2NWU5MDY1OWEwYzI4YzdhMDJmYjc2ZmI4MTVmODcwMjAyMjdjZDJhYWQ2YjNkZGZhMDBiYjY0M2FjNTRiNWU0MjYyN2QxNTE2Y2UiLCJpYXQiOjE1ODkzNzcwODMsIm5iZiI6MTU4OTM3NzA4MywiZXhwIjoxNjIwOTEzMDgzLCJzdWIiOiIxMCIsInNjb3BlcyI6WyJhZG1pbiJdfQ.my4LIzqVutcecvMNIrXeJLefOt9_mFAyqhM9sZq6Y5nX-_7-o5lFMhdfLPzb3Xz0uej32ufXUkjO-dOYw3JPRV3_95WQs1LrcqT1VW728bnVsfrZDadFPyL9pqph0mQ_GGAA8HWN_BHxzd8O-XYoU4HtUa5nOJvruOb40NvePRNHpiWO-AGX0yKgCF0jDEmtkrwzyYjDQCtzaRd6pRSflc7Pc2XC7okqGQY5Sr9Um28KizQXKYExmWjlAWu9IiHfiQKskfOpM2EzL1Upu1AeH2ERZSLQAT4O9SHvCHrLNvShIc2IM9m7hWUCkdhkiJOOXnJEk9TbQD_foP__bIpAGINzMeUNDDeZc5kEyuPm-yKXDfoekobupiHX2SB2S_tkq2jJWX63Z0m11v1RMms-RLxRBKhfvXaOqWzm5Hx5S6sEFxT6iNtRiwQRXJZ9c-39100re_4Ll4ENUJuD5_Yy_7mvEniRakDlbvnrfv3WMHQl5JHVHJUNHcmVLE8uZulQHXc2hW1nNGnV_Z6_AxHaNTMPGM_1__-1ONFETOHwFiZy0bejF99SiqybEr3BISYWaPSQ0T9xYYfFqJ32wn0LwKQQ2thNfbtagLnANot1CZk-fH59NAajVK5xS4WO5coDzC74u-38z6h1A2UqXfVkNTOeNwGpszupqM2ie67ruOA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/E:/Bolt/Bolt.avi"
+								},
+								{
+									"key": "where_to_upload",
+									"value": "",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://easyno.ir",
+							"protocol": "http",
+							"host": [
+								"easyno",
+								"ir"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Grades",
+			"item": [
+				{
+					"name": "add grade",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTQyYmJhNGQ5ZmZjZDA5YWQ2ZTI4NWYyNzFjM2Q4YjNhMzgxZDUxZDI5OWM0MzU5MWRhYjI4NjQyMGNlODljNTI5YWU3MTkxNjI2N2JhYWIiLCJpYXQiOjE1ODgwMTA0MDIsIm5iZiI6MTU4ODAxMDQwMiwiZXhwIjoxNjE5NTQ2NDAyLCJzdWIiOiIxIiwic2NvcGVzIjpbImFkbWluIl19.js0FyI34pIxS8TnOzGcleGt2GdjMnYkm6Yi4dsm48ejI7Xh-x6ajnS8r6tzDUO3aaf6xM2YvVejylG3OismLtOp3m-axzC_9pe3BgCBFi-7_BzaWRjU8kNKRcadnkYK1jcvBK8AsuvCT65OO2kRs9hJvMAStHTMn3J5h9l72S3DMSPlNxMUQ3iJgF8T2y0lX67RHWo6wTKG_kiQQjmQgtUXqQvENVkSXcQ2D037kZARN81rUdPBG42x1gYc70hMmRqtQGviMMqAfYefHahVrk5rjkJD8d6yY_IDVOIqVNfQtwEU6X5IQfuMXJKF47drLxlJ0fqD216AKVz7e8h8yMDdJdBBPcKoRiHu5avEVm7zmGwrh_-2K5jvF7NZmoTLE-nGmdH3rjTIgI2mzsd8fWEF6-R2MwuoLB8V9IphtYGTpMuDVIustykBImN8n1Zir1dGY1AvvUo4DulPe7iFQYuHe0wWjiOCa3ez5rbuuxPDyhK2jH5stDOibLo3RAldExwep5SViur7j-kjlZ-WNWvdpXxFa9A9fcW69WNbMj9B9153pRT-5HbY-Fat6gMvWTt_LUNRni7zURBDD2iWMMLragYr8rZpIy_99PSVRrTWDrH-ffWp5dLP2rreB0qG_SpDhd9sFi7aenxkDLgiJ415hJzaagNu9jY2IJHwlvpc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "پایه صدم دبستان",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://teaching.webtab.co/api/v1/grade",
+							"protocol": "http",
+							"host": [
+								"teaching",
+								"webtab",
+								"co"
+							],
+							"path": [
+								"api",
+								"v1",
+								"grade"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get teachers and lessons with grade id",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYmFjM2UwOWY2YjQ2YzM2ODBmNTNmZDE5MmQ4ZTAyZmUwOWJjZjc4YjNiY2RmZGViN2QxYWM3YmQ3YTRkYWI0NzBjMGRiYzk5ODQ4OGQ0ODgiLCJpYXQiOjE1ODk4ODgxMjgsIm5iZiI6MTU4OTg4ODEyOCwiZXhwIjoxNjIxNDI0MTI4LCJzdWIiOiIxMCIsInNjb3BlcyI6WyJhZG1pbiJdfQ.mB5OvJ23nSnr7URNsSohdyM7QhLkA89VWY5f7ErdKRFTKNfmfvcr3Mtr2lfddF5iP9HFjmQ6xcm9Eo_U5iJGHkvZWsbD8kuQ5zyknCWYsX51twHKfQ9AmiwZXLTUSUmexQ8n24kH_6lcBqZs7pF1lhvbAGdVH41aHYbM16D8zuHEIna38ZsBRPgjBalnN2bo0VNL3VhVnMxezTM3Uh8houegt3x7_6DWrJZLtvvxqgIvK7GWV84jd1bTU-xqACXGpiEdoq4nu7k0Sb5vCeeFvM8G4uoK6I56wgifaTZwn7ec4Rch5FXaW32Lr6Jwx-QHVQ8a8i9eXbT2lmp0epgvLrGwyqiFIvh4EBncsHkxRAH7F5AYkEplNy466lJO3pUVBi7bXHMp5GgLd5IuQbbSmgGEyuSlRxSMwlQsvFOhSzZqqsGxzXJfOexz0S6Cc42fvITyKvT_Js7uoqFtJJAPXvD0MeCcAajtTRrHLnbttJbmGU5wMGiPWr9h_U7LJ1PC_rSAeD5fvG_r61Sl7Wji_gV20wKgIF9kj9KYtKSnC7119NJqfiVRAV9EA9RZfb-QIxCE3KHBdI8tP_KhK6zCf-adFmuwMRpHvO0jSaw-_3lK3UQ-FAUWp0a1ZK7wiz7fiEGnaKidqv62QQFMcMSsayX2Tpn6cqHosAoS8-uhueE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "grade_id",
+									"value": "1",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/grades_of_teacher",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"grades_of_teacher"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get grades",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/grade",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"grade"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete grade",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDM3YjkwODVmM2Y4ZjNiZjQyOGU4M2I2ODliZTM5ZDJhMmJkZTAwNWNiZmY4MWRiYTNhYTZlYmFkOTYzNzdmMzhiNmEzMjAyZjgzNDZhZTIiLCJpYXQiOjE1ODg0MTgwNTEsIm5iZiI6MTU4ODQxODA1MSwiZXhwIjoxNjE5OTU0MDUxLCJzdWIiOiIyIiwic2NvcGVzIjpbImFkbWluIl19.nipo7o4tX_Eahy9PcSKjCMS3wXR1x1X1LC7Uu9uPMJ4uHLaKPkrFp7kSPJM8zp0rhzpUokW21vMVwS1xVoWZ1jucJqtOlDK9lYOSeCKs0oknIPHawngL84FPpdO0XJlQKRExiUtMu26fF_0aTWoI4DZc6AnzWEoc5YHarr-ynUjqIsQvxMubVVtsrtkD6zIDGixjEuSczXcXABJzZZAn6K-Umaqms1-_ObhqF9q3t2kUwejo6kJ3_kz__AAW4XZaId9AXgT5vyx7JCEGhSHJgdvqjCCc7pEHzW-eQJXZ2Zd_fTyF4_X9WvAtzHUUoJ-y4-YeIGYIeWz5eFxJN7ma1D-KOluGJDecaKQ2OS_HY3SReXk5y5Pz1uhN_v3PJKBfkvH1pCN5ZELu-EcMz2eclh-f6qdYXCMCDdYAiY1Nou7k9BP9ZwdeO7-DwCbU_q0XrzvpfLdbutv73WEVZHI8a4QMxeVstjW_lN1cUyi-ilpVzIH1cPyQfQjykRCt87FB-9xoRSsA2U5srrYmvAHBF45OA9ympYv3s89xNr6zxTPIDF-kbDjE0CoRr8TuOUPv9Z-aV1CXoqp8k8HF2GvwNsqYC4HyTg6R9Y_xkSIgwjPq4z2OQPuaiM61IVRLGdFd5RBnHoP5Sm88J3wKCj--j7wuf0LAVITcpnww9gO1Mf8"
+							}
+						],
+						"url": {
+							"raw": "http://teaching.webtab.co/api/v1/grade/33",
+							"protocol": "http",
+							"host": [
+								"teaching",
+								"webtab",
+								"co"
+							],
+							"path": [
+								"api",
+								"v1",
+								"grade",
+								"33"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit grade",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGJjZTY2NWU5MDY1OWEwYzI4YzdhMDJmYjc2ZmI4MTVmODcwMjAyMjdjZDJhYWQ2YjNkZGZhMDBiYjY0M2FjNTRiNWU0MjYyN2QxNTE2Y2UiLCJpYXQiOjE1ODkzNzcwODMsIm5iZiI6MTU4OTM3NzA4MywiZXhwIjoxNjIwOTEzMDgzLCJzdWIiOiIxMCIsInNjb3BlcyI6WyJhZG1pbiJdfQ.my4LIzqVutcecvMNIrXeJLefOt9_mFAyqhM9sZq6Y5nX-_7-o5lFMhdfLPzb3Xz0uej32ufXUkjO-dOYw3JPRV3_95WQs1LrcqT1VW728bnVsfrZDadFPyL9pqph0mQ_GGAA8HWN_BHxzd8O-XYoU4HtUa5nOJvruOb40NvePRNHpiWO-AGX0yKgCF0jDEmtkrwzyYjDQCtzaRd6pRSflc7Pc2XC7okqGQY5Sr9Um28KizQXKYExmWjlAWu9IiHfiQKskfOpM2EzL1Upu1AeH2ERZSLQAT4O9SHvCHrLNvShIc2IM9m7hWUCkdhkiJOOXnJEk9TbQD_foP__bIpAGINzMeUNDDeZc5kEyuPm-yKXDfoekobupiHX2SB2S_tkq2jJWX63Z0m11v1RMms-RLxRBKhfvXaOqWzm5Hx5S6sEFxT6iNtRiwQRXJZ9c-39100re_4Ll4ENUJuD5_Yy_7mvEniRakDlbvnrfv3WMHQl5JHVHJUNHcmVLE8uZulQHXc2hW1nNGnV_Z6_AxHaNTMPGM_1__-1ONFETOHwFiZy0bejF99SiqybEr3BISYWaPSQ0T9xYYfFqJ32wn0LwKQQ2thNfbtagLnANot1CZk-fH59NAajVK5xS4WO5coDzC74u-38z6h1A2UqXfVkNTOeNwGpszupqM2ie67ruOA"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"grade_title\" : \"سال هفتم دبستان\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/grade/9",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"grade",
+								"9"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Cities",
+			"item": [
+				{
+					"name": "add City",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTQyYmJhNGQ5ZmZjZDA5YWQ2ZTI4NWYyNzFjM2Q4YjNhMzgxZDUxZDI5OWM0MzU5MWRhYjI4NjQyMGNlODljNTI5YWU3MTkxNjI2N2JhYWIiLCJpYXQiOjE1ODgwMTA0MDIsIm5iZiI6MTU4ODAxMDQwMiwiZXhwIjoxNjE5NTQ2NDAyLCJzdWIiOiIxIiwic2NvcGVzIjpbImFkbWluIl19.js0FyI34pIxS8TnOzGcleGt2GdjMnYkm6Yi4dsm48ejI7Xh-x6ajnS8r6tzDUO3aaf6xM2YvVejylG3OismLtOp3m-axzC_9pe3BgCBFi-7_BzaWRjU8kNKRcadnkYK1jcvBK8AsuvCT65OO2kRs9hJvMAStHTMn3J5h9l72S3DMSPlNxMUQ3iJgF8T2y0lX67RHWo6wTKG_kiQQjmQgtUXqQvENVkSXcQ2D037kZARN81rUdPBG42x1gYc70hMmRqtQGviMMqAfYefHahVrk5rjkJD8d6yY_IDVOIqVNfQtwEU6X5IQfuMXJKF47drLxlJ0fqD216AKVz7e8h8yMDdJdBBPcKoRiHu5avEVm7zmGwrh_-2K5jvF7NZmoTLE-nGmdH3rjTIgI2mzsd8fWEF6-R2MwuoLB8V9IphtYGTpMuDVIustykBImN8n1Zir1dGY1AvvUo4DulPe7iFQYuHe0wWjiOCa3ez5rbuuxPDyhK2jH5stDOibLo3RAldExwep5SViur7j-kjlZ-WNWvdpXxFa9A9fcW69WNbMj9B9153pRT-5HbY-Fat6gMvWTt_LUNRni7zURBDD2iWMMLragYr8rZpIy_99PSVRrTWDrH-ffWp5dLP2rreB0qG_SpDhd9sFi7aenxkDLgiJ415hJzaagNu9jY2IJHwlvpc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "تهران",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://teaching.webtab.co/api/v1/city",
+							"protocol": "http",
+							"host": [
+								"teaching",
+								"webtab",
+								"co"
+							],
+							"path": [
+								"api",
+								"v1",
+								"city"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get Cities",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "https://api.amoozeshmelli.com/api/v1/city",
+							"protocol": "https",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"city"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Lessons",
+			"item": [
+				{
+					"name": "user lessons",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTI1NGE3NzkwZmQxNmM0ODFlZDcwNTFjNjg0NDA2OTI5ZTVkM2I2Y2E4MDE2ZDlmMTU1MTI5NzA2MTUxZWZhNmI1ZjY3Y2YxNDNmNzIwMGUiLCJpYXQiOjE1ODk1MzMyMzIsIm5iZiI6MTU4OTUzMzIzMiwiZXhwIjoxNjIxMDY5MjMyLCJzdWIiOiIxMSIsInNjb3BlcyI6WyJ1c2VyIl19.R8ESWkUnul_VYqkjxDzQ0kzPi65SZ0kE1RKq3BHQuTakHYO4EllZMk5rntk4Etj6bg_3nSxhx6qEmqOwazmXcKYKSnWnBEypRAGTcnbNo8aTk-zdkGjSN3vYIJionGkT2r2WoJxUWfhBBc165zAE29_AzvpIAcqGrlFeM5C93hIcv4_uyD2f7sJr07c7-7FRvF0AFEDW4c0hzE3DSBDVs6Jhr5FHHB8iX9l2Q2YQCz5mGKFnYYU1ksHFHD-x8IOcXkbf6OTrClbADNeGAS8FrahDoV1-ze3aEHs1rfzlhlar4Arb0lcSrHHHXOcn1sPQBcHlUoLghd3ozPquHASCrFFrLeIemHIZvR9lkXCmhNh7P6nCdLfB8BmDhuOKJ8eS4d8Ox7tLwrizS6rtKSBnH6ESwK7f1dpskF8tu1PwD8wC02IYLvsMPhC6LKo28Zfm5Kga2WgqVpb6aUL6Qv_86SH2mQ-q6NOzuozBJ1PzI2znQKoS56YjQ5Q2NhHVpFFaMlvth_q5WAVMeJzbMcXWJSU8Nc-HvVj86zbrRF8okwue66YLreGVa2hYn60u_ZyaSVnw1TQAZ1Eq72zYPy2oXXNkByl8qwHFQihFMSrcpn8AHVHOCyjmbxjPx6_Plx4P0zd2slr6q-YK9lGQldlbyqcTqFH3hF-dGMQp1an_iL4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/user_lessons",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user_lessons"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lessons",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTM2OTkzODgyZDcxM2U5NDhhYmExNmNmNDFlOThlODJkYTc1Yjk5MDdlZmZhZDg5YTAxYWQyM2ZlOWRiYTYzODUxNGQxMjllNzQ2ZjcwOWQiLCJpYXQiOjE1ODg2OTI0NzIsIm5iZiI6MTU4ODY5MjQ3MiwiZXhwIjoxNjIwMjI4NDcyLCJzdWIiOiIxIiwic2NvcGVzIjpbImFkbWluIl19.CiAoXKpNIQr-lDwJJO28fycntEYqCaQYT2ATKLY66FC6O-I5br8gmcqfwb0YquYPbu1S7v6c0oHIEt54KuhtaVk456CvYmU1xGp9ZmXw-KBnv67w4xakMWWHbmSQno69dIcWILoIq28SOvIXRNeZLScAHhhplABxN6FGroVRoz2GNs3Z66eHsfwvbnUTKwjn5MfGbIX8CUJiWvQk-Zup38Vaf6MQpLvZ1GW3WYZ7i8gjjLjzyKKPRdVLPiy9Ii1jAUffH3z4ajL3SHOLOQWCeCYDr5V5a5Khc-QQsp9Ws2QBleevPXsP8nwVSND3-qTYUFUewOWvydfmp6lWXo1qWCvNN6V6gUR9gQt0JTHjaPdFEo_A14MwKu74oSTTvhiiUHUL2JswEOQss_FWszBDf9bHXP90MDpJDReVhfzsWNM-XFdHoMt4qyNl1BxbLXTcwDzHlDzqGEBf1KnOy2A-czXEe_LCIQIp5aCP2Duv4TyAofmgouGAMW-VpDKIMYxiuA981HqYoD6WrpeLfYRk4Vv6rbbOC7arCus9EMqTqdku2wyZvS0Fa_lK6vaRMWeRyNqnQynNyB1bQrg3lCaUGTlLeDWVoAHlBNHpibZMH55YaNtjMbhP6kyO8cvDvWEFCD7fl2UWbmyv9UShk_SQkxRsOOLiuFnbG7pbx1XnKW4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://teaching.webtab.co/api/v1/lesson",
+							"protocol": "http",
+							"host": [
+								"teaching",
+								"webtab",
+								"co"
+							],
+							"path": [
+								"api",
+								"v1",
+								"lesson"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show lesson",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGJjZTY2NWU5MDY1OWEwYzI4YzdhMDJmYjc2ZmI4MTVmODcwMjAyMjdjZDJhYWQ2YjNkZGZhMDBiYjY0M2FjNTRiNWU0MjYyN2QxNTE2Y2UiLCJpYXQiOjE1ODkzNzcwODMsIm5iZiI6MTU4OTM3NzA4MywiZXhwIjoxNjIwOTEzMDgzLCJzdWIiOiIxMCIsInNjb3BlcyI6WyJhZG1pbiJdfQ.my4LIzqVutcecvMNIrXeJLefOt9_mFAyqhM9sZq6Y5nX-_7-o5lFMhdfLPzb3Xz0uej32ufXUkjO-dOYw3JPRV3_95WQs1LrcqT1VW728bnVsfrZDadFPyL9pqph0mQ_GGAA8HWN_BHxzd8O-XYoU4HtUa5nOJvruOb40NvePRNHpiWO-AGX0yKgCF0jDEmtkrwzyYjDQCtzaRd6pRSflc7Pc2XC7okqGQY5Sr9Um28KizQXKYExmWjlAWu9IiHfiQKskfOpM2EzL1Upu1AeH2ERZSLQAT4O9SHvCHrLNvShIc2IM9m7hWUCkdhkiJOOXnJEk9TbQD_foP__bIpAGINzMeUNDDeZc5kEyuPm-yKXDfoekobupiHX2SB2S_tkq2jJWX63Z0m11v1RMms-RLxRBKhfvXaOqWzm5Hx5S6sEFxT6iNtRiwQRXJZ9c-39100re_4Ll4ENUJuD5_Yy_7mvEniRakDlbvnrfv3WMHQl5JHVHJUNHcmVLE8uZulQHXc2hW1nNGnV_Z6_AxHaNTMPGM_1__-1ONFETOHwFiZy0bejF99SiqybEr3BISYWaPSQ0T9xYYfFqJ32wn0LwKQQ2thNfbtagLnANot1CZk-fH59NAajVK5xS4WO5coDzC74u-38z6h1A2UqXfVkNTOeNwGpszupqM2ie67ruOA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/lesson/11",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"lesson",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit lesson",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTQyYmJhNGQ5ZmZjZDA5YWQ2ZTI4NWYyNzFjM2Q4YjNhMzgxZDUxZDI5OWM0MzU5MWRhYjI4NjQyMGNlODljNTI5YWU3MTkxNjI2N2JhYWIiLCJpYXQiOjE1ODgwMTA0MDIsIm5iZiI6MTU4ODAxMDQwMiwiZXhwIjoxNjE5NTQ2NDAyLCJzdWIiOiIxIiwic2NvcGVzIjpbImFkbWluIl19.js0FyI34pIxS8TnOzGcleGt2GdjMnYkm6Yi4dsm48ejI7Xh-x6ajnS8r6tzDUO3aaf6xM2YvVejylG3OismLtOp3m-axzC_9pe3BgCBFi-7_BzaWRjU8kNKRcadnkYK1jcvBK8AsuvCT65OO2kRs9hJvMAStHTMn3J5h9l72S3DMSPlNxMUQ3iJgF8T2y0lX67RHWo6wTKG_kiQQjmQgtUXqQvENVkSXcQ2D037kZARN81rUdPBG42x1gYc70hMmRqtQGviMMqAfYefHahVrk5rjkJD8d6yY_IDVOIqVNfQtwEU6X5IQfuMXJKF47drLxlJ0fqD216AKVz7e8h8yMDdJdBBPcKoRiHu5avEVm7zmGwrh_-2K5jvF7NZmoTLE-nGmdH3rjTIgI2mzsd8fWEF6-R2MwuoLB8V9IphtYGTpMuDVIustykBImN8n1Zir1dGY1AvvUo4DulPe7iFQYuHe0wWjiOCa3ez5rbuuxPDyhK2jH5stDOibLo3RAldExwep5SViur7j-kjlZ-WNWvdpXxFa9A9fcW69WNbMj9B9153pRT-5HbY-Fat6gMvWTt_LUNRni7zURBDD2iWMMLragYr8rZpIy_99PSVRrTWDrH-ffWp5dLP2rreB0qG_SpDhd9sFi7aenxkDLgiJ415hJzaagNu9jY2IJHwlvpc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"lesson_title\" : \"علوم اول دبستان\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://teaching.webtab.co/api/v1/lesson/3",
+							"protocol": "http",
+							"host": [
+								"teaching",
+								"webtab",
+								"co"
+							],
+							"path": [
+								"api",
+								"v1",
+								"lesson",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete lesson",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDM3YjkwODVmM2Y4ZjNiZjQyOGU4M2I2ODliZTM5ZDJhMmJkZTAwNWNiZmY4MWRiYTNhYTZlYmFkOTYzNzdmMzhiNmEzMjAyZjgzNDZhZTIiLCJpYXQiOjE1ODg0MTgwNTEsIm5iZiI6MTU4ODQxODA1MSwiZXhwIjoxNjE5OTU0MDUxLCJzdWIiOiIyIiwic2NvcGVzIjpbImFkbWluIl19.nipo7o4tX_Eahy9PcSKjCMS3wXR1x1X1LC7Uu9uPMJ4uHLaKPkrFp7kSPJM8zp0rhzpUokW21vMVwS1xVoWZ1jucJqtOlDK9lYOSeCKs0oknIPHawngL84FPpdO0XJlQKRExiUtMu26fF_0aTWoI4DZc6AnzWEoc5YHarr-ynUjqIsQvxMubVVtsrtkD6zIDGixjEuSczXcXABJzZZAn6K-Umaqms1-_ObhqF9q3t2kUwejo6kJ3_kz__AAW4XZaId9AXgT5vyx7JCEGhSHJgdvqjCCc7pEHzW-eQJXZ2Zd_fTyF4_X9WvAtzHUUoJ-y4-YeIGYIeWz5eFxJN7ma1D-KOluGJDecaKQ2OS_HY3SReXk5y5Pz1uhN_v3PJKBfkvH1pCN5ZELu-EcMz2eclh-f6qdYXCMCDdYAiY1Nou7k9BP9ZwdeO7-DwCbU_q0XrzvpfLdbutv73WEVZHI8a4QMxeVstjW_lN1cUyi-ilpVzIH1cPyQfQjykRCt87FB-9xoRSsA2U5srrYmvAHBF45OA9ympYv3s89xNr6zxTPIDF-kbDjE0CoRr8TuOUPv9Z-aV1CXoqp8k8HF2GvwNsqYC4HyTg6R9Y_xkSIgwjPq4z2OQPuaiM61IVRLGdFd5RBnHoP5Sm88J3wKCj--j7wuf0LAVITcpnww9gO1Mf8"
+							}
+						],
+						"url": {
+							"raw": "http://teaching.webtab.co/api/v1/lesson/33",
+							"protocol": "http",
+							"host": [
+								"teaching",
+								"webtab",
+								"co"
+							],
+							"path": [
+								"api",
+								"v1",
+								"lesson",
+								"33"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add lesson",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGJjZTY2NWU5MDY1OWEwYzI4YzdhMDJmYjc2ZmI4MTVmODcwMjAyMjdjZDJhYWQ2YjNkZGZhMDBiYjY0M2FjNTRiNWU0MjYyN2QxNTE2Y2UiLCJpYXQiOjE1ODkzNzcwODMsIm5iZiI6MTU4OTM3NzA4MywiZXhwIjoxNjIwOTEzMDgzLCJzdWIiOiIxMCIsInNjb3BlcyI6WyJhZG1pbiJdfQ.my4LIzqVutcecvMNIrXeJLefOt9_mFAyqhM9sZq6Y5nX-_7-o5lFMhdfLPzb3Xz0uej32ufXUkjO-dOYw3JPRV3_95WQs1LrcqT1VW728bnVsfrZDadFPyL9pqph0mQ_GGAA8HWN_BHxzd8O-XYoU4HtUa5nOJvruOb40NvePRNHpiWO-AGX0yKgCF0jDEmtkrwzyYjDQCtzaRd6pRSflc7Pc2XC7okqGQY5Sr9Um28KizQXKYExmWjlAWu9IiHfiQKskfOpM2EzL1Upu1AeH2ERZSLQAT4O9SHvCHrLNvShIc2IM9m7hWUCkdhkiJOOXnJEk9TbQD_foP__bIpAGINzMeUNDDeZc5kEyuPm-yKXDfoekobupiHX2SB2S_tkq2jJWX63Z0m11v1RMms-RLxRBKhfvXaOqWzm5Hx5S6sEFxT6iNtRiwQRXJZ9c-39100re_4Ll4ENUJuD5_Yy_7mvEniRakDlbvnrfv3WMHQl5JHVHJUNHcmVLE8uZulQHXc2hW1nNGnV_Z6_AxHaNTMPGM_1__-1ONFETOHwFiZy0bejF99SiqybEr3BISYWaPSQ0T9xYYfFqJ32wn0LwKQQ2thNfbtagLnANot1CZk-fH59NAajVK5xS4WO5coDzC74u-38z6h1A2UqXfVkNTOeNwGpszupqM2ie67ruOA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"lesson_title\" : \"درس تست\",\n\t\"grade_ids\" : [\n\t\t1,\n\t\t2\n\t]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/lesson",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"lesson"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show lessons with grade id",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTQyYmJhNGQ5ZmZjZDA5YWQ2ZTI4NWYyNzFjM2Q4YjNhMzgxZDUxZDI5OWM0MzU5MWRhYjI4NjQyMGNlODljNTI5YWU3MTkxNjI2N2JhYWIiLCJpYXQiOjE1ODgwMTA0MDIsIm5iZiI6MTU4ODAxMDQwMiwiZXhwIjoxNjE5NTQ2NDAyLCJzdWIiOiIxIiwic2NvcGVzIjpbImFkbWluIl19.js0FyI34pIxS8TnOzGcleGt2GdjMnYkm6Yi4dsm48ejI7Xh-x6ajnS8r6tzDUO3aaf6xM2YvVejylG3OismLtOp3m-axzC_9pe3BgCBFi-7_BzaWRjU8kNKRcadnkYK1jcvBK8AsuvCT65OO2kRs9hJvMAStHTMn3J5h9l72S3DMSPlNxMUQ3iJgF8T2y0lX67RHWo6wTKG_kiQQjmQgtUXqQvENVkSXcQ2D037kZARN81rUdPBG42x1gYc70hMmRqtQGviMMqAfYefHahVrk5rjkJD8d6yY_IDVOIqVNfQtwEU6X5IQfuMXJKF47drLxlJ0fqD216AKVz7e8h8yMDdJdBBPcKoRiHu5avEVm7zmGwrh_-2K5jvF7NZmoTLE-nGmdH3rjTIgI2mzsd8fWEF6-R2MwuoLB8V9IphtYGTpMuDVIustykBImN8n1Zir1dGY1AvvUo4DulPe7iFQYuHe0wWjiOCa3ez5rbuuxPDyhK2jH5stDOibLo3RAldExwep5SViur7j-kjlZ-WNWvdpXxFa9A9fcW69WNbMj9B9153pRT-5HbY-Fat6gMvWTt_LUNRni7zURBDD2iWMMLragYr8rZpIy_99PSVRrTWDrH-ffWp5dLP2rreB0qG_SpDhd9sFi7aenxkDLgiJ415hJzaagNu9jY2IJHwlvpc"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "grade_id",
+									"value": "1",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://teaching.webtab.co/api/v1/lessons",
+							"protocol": "http",
+							"host": [
+								"teaching",
+								"webtab",
+								"co"
+							],
+							"path": [
+								"api",
+								"v1",
+								"lessons"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Subjects",
+			"item": [
+				{
+					"name": "add subject",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTQyYmJhNGQ5ZmZjZDA5YWQ2ZTI4NWYyNzFjM2Q4YjNhMzgxZDUxZDI5OWM0MzU5MWRhYjI4NjQyMGNlODljNTI5YWU3MTkxNjI2N2JhYWIiLCJpYXQiOjE1ODgwMTA0MDIsIm5iZiI6MTU4ODAxMDQwMiwiZXhwIjoxNjE5NTQ2NDAyLCJzdWIiOiIxIiwic2NvcGVzIjpbImFkbWluIl19.js0FyI34pIxS8TnOzGcleGt2GdjMnYkm6Yi4dsm48ejI7Xh-x6ajnS8r6tzDUO3aaf6xM2YvVejylG3OismLtOp3m-axzC_9pe3BgCBFi-7_BzaWRjU8kNKRcadnkYK1jcvBK8AsuvCT65OO2kRs9hJvMAStHTMn3J5h9l72S3DMSPlNxMUQ3iJgF8T2y0lX67RHWo6wTKG_kiQQjmQgtUXqQvENVkSXcQ2D037kZARN81rUdPBG42x1gYc70hMmRqtQGviMMqAfYefHahVrk5rjkJD8d6yY_IDVOIqVNfQtwEU6X5IQfuMXJKF47drLxlJ0fqD216AKVz7e8h8yMDdJdBBPcKoRiHu5avEVm7zmGwrh_-2K5jvF7NZmoTLE-nGmdH3rjTIgI2mzsd8fWEF6-R2MwuoLB8V9IphtYGTpMuDVIustykBImN8n1Zir1dGY1AvvUo4DulPe7iFQYuHe0wWjiOCa3ez5rbuuxPDyhK2jH5stDOibLo3RAldExwep5SViur7j-kjlZ-WNWvdpXxFa9A9fcW69WNbMj9B9153pRT-5HbY-Fat6gMvWTt_LUNRni7zURBDD2iWMMLragYr8rZpIy_99PSVRrTWDrH-ffWp5dLP2rreB0qG_SpDhd9sFi7aenxkDLgiJ415hJzaagNu9jY2IJHwlvpc"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\n{\n\t\"subject_title\" : \"فصل دوم\",\n\t\"lesson_id\" : \"64\",\n\t\"teachers_ids\" : [6]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://teaching.webtab.co/api/v1/subject",
+							"protocol": "http",
+							"host": [
+								"teaching",
+								"webtab",
+								"co"
+							],
+							"path": [
+								"api",
+								"v1",
+								"subject"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get subjects of lesson",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGJjZTY2NWU5MDY1OWEwYzI4YzdhMDJmYjc2ZmI4MTVmODcwMjAyMjdjZDJhYWQ2YjNkZGZhMDBiYjY0M2FjNTRiNWU0MjYyN2QxNTE2Y2UiLCJpYXQiOjE1ODkzNzcwODMsIm5iZiI6MTU4OTM3NzA4MywiZXhwIjoxNjIwOTEzMDgzLCJzdWIiOiIxMCIsInNjb3BlcyI6WyJhZG1pbiJdfQ.my4LIzqVutcecvMNIrXeJLefOt9_mFAyqhM9sZq6Y5nX-_7-o5lFMhdfLPzb3Xz0uej32ufXUkjO-dOYw3JPRV3_95WQs1LrcqT1VW728bnVsfrZDadFPyL9pqph0mQ_GGAA8HWN_BHxzd8O-XYoU4HtUa5nOJvruOb40NvePRNHpiWO-AGX0yKgCF0jDEmtkrwzyYjDQCtzaRd6pRSflc7Pc2XC7okqGQY5Sr9Um28KizQXKYExmWjlAWu9IiHfiQKskfOpM2EzL1Upu1AeH2ERZSLQAT4O9SHvCHrLNvShIc2IM9m7hWUCkdhkiJOOXnJEk9TbQD_foP__bIpAGINzMeUNDDeZc5kEyuPm-yKXDfoekobupiHX2SB2S_tkq2jJWX63Z0m11v1RMms-RLxRBKhfvXaOqWzm5Hx5S6sEFxT6iNtRiwQRXJZ9c-39100re_4Ll4ENUJuD5_Yy_7mvEniRakDlbvnrfv3WMHQl5JHVHJUNHcmVLE8uZulQHXc2hW1nNGnV_Z6_AxHaNTMPGM_1__-1ONFETOHwFiZy0bejF99SiqybEr3BISYWaPSQ0T9xYYfFqJ32wn0LwKQQ2thNfbtagLnANot1CZk-fH59NAajVK5xS4WO5coDzC74u-38z6h1A2UqXfVkNTOeNwGpszupqM2ie67ruOA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "lesson_id",
+									"value": "9",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/subjects_of_lesson",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"subjects_of_lesson"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get subjects of lesson of user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTI1NGE3NzkwZmQxNmM0ODFlZDcwNTFjNjg0NDA2OTI5ZTVkM2I2Y2E4MDE2ZDlmMTU1MTI5NzA2MTUxZWZhNmI1ZjY3Y2YxNDNmNzIwMGUiLCJpYXQiOjE1ODk1MzMyMzIsIm5iZiI6MTU4OTUzMzIzMiwiZXhwIjoxNjIxMDY5MjMyLCJzdWIiOiIxMSIsInNjb3BlcyI6WyJ1c2VyIl19.R8ESWkUnul_VYqkjxDzQ0kzPi65SZ0kE1RKq3BHQuTakHYO4EllZMk5rntk4Etj6bg_3nSxhx6qEmqOwazmXcKYKSnWnBEypRAGTcnbNo8aTk-zdkGjSN3vYIJionGkT2r2WoJxUWfhBBc165zAE29_AzvpIAcqGrlFeM5C93hIcv4_uyD2f7sJr07c7-7FRvF0AFEDW4c0hzE3DSBDVs6Jhr5FHHB8iX9l2Q2YQCz5mGKFnYYU1ksHFHD-x8IOcXkbf6OTrClbADNeGAS8FrahDoV1-ze3aEHs1rfzlhlar4Arb0lcSrHHHXOcn1sPQBcHlUoLghd3ozPquHASCrFFrLeIemHIZvR9lkXCmhNh7P6nCdLfB8BmDhuOKJ8eS4d8Ox7tLwrizS6rtKSBnH6ESwK7f1dpskF8tu1PwD8wC02IYLvsMPhC6LKo28Zfm5Kga2WgqVpb6aUL6Qv_86SH2mQ-q6NOzuozBJ1PzI2znQKoS56YjQ5Q2NhHVpFFaMlvth_q5WAVMeJzbMcXWJSU8Nc-HvVj86zbrRF8okwue66YLreGVa2hYn60u_ZyaSVnw1TQAZ1Eq72zYPy2oXXNkByl8qwHFQihFMSrcpn8AHVHOCyjmbxjPx6_Plx4P0zd2slr6q-YK9lGQldlbyqcTqFH3hF-dGMQp1an_iL4"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "lesson_id",
+									"value": "9",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/subjects_of_lesson_of_user",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"subjects_of_lesson_of_user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete subject",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZWMyMjYyYjZlNWI4ZmJmNGI1ZjcxMTIzOWY4MmY4Y2VmYjVjNDgzYmFmY2NlOWQ2NjBlOWYyZjUxMmYwNmY3MjI5ZGUzMGMwODQ3YWFkYzYiLCJpYXQiOjE1ODkyOTU2NzAsIm5iZiI6MTU4OTI5NTY3MCwiZXhwIjoxNjIwODMxNjcwLCJzdWIiOiIxMCIsInNjb3BlcyI6WyJhZG1pbiJdfQ.XT7JXbXvvFeeY_lnZyih7T8d6ypkmt9xdyGsJbzuKTI-qDiVPKv4qZkf8RTTQaFDVPy9sDZl9S6X4GqSFeSFbcfYLFiirWwDHQBl92JpQnQIXldPif97RGrPtOuUqEjTrJo8Z-OcC1Qxe9oVDnDVJ9Ds-zeyJtXpxS2WQXpY9KVIBAwi29rBPb7bFkvx0moF0UBhqCnLk_qcb6_GWZ0nrCVMGDsVkTrge_Y_4k4mkV-MqGnBN7UIEngd6PWr8G9LzHbpSNJTejjyE6nHx3nk1PXW7ppgTC3veztW9lQ67sh8w00gS4LyEUGrW3dP9eAnlVFQy74B6E8CvXcRYiUyr_2Pzps1O_pnjxPvOALKGOD_BkjHIOUAJlj6Irb5q4ArqzoIV0THpuadFbi0aTHhUJNNIlzDxOQ8klu3Y0_S5QcVoo8DL7WDg2fJu4RjsfgvinH4DKM8ttuR2g07rJNRZgeB6qv8cH8hkomNcJ02IIrpViDBdIEm6OhgJDVIBTJAZQsUeJXDJRYf8k5iT4C24fgwunPC4X2Zy5f6McJQHvJASkpqAMxo1GmiAXxMRrkgkT80WqliQxy0Beo8YaqMe20xiWik-CV4elpg-GiYFhWBu7Y7sEJ9HuW8Abr5WAnFYjS9gRIPh40BkDUSfzEOt3084Jn-8t5jxv2eXCJvGoM"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/subject/2",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"subject",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit subject",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGJjZTY2NWU5MDY1OWEwYzI4YzdhMDJmYjc2ZmI4MTVmODcwMjAyMjdjZDJhYWQ2YjNkZGZhMDBiYjY0M2FjNTRiNWU0MjYyN2QxNTE2Y2UiLCJpYXQiOjE1ODkzNzcwODMsIm5iZiI6MTU4OTM3NzA4MywiZXhwIjoxNjIwOTEzMDgzLCJzdWIiOiIxMCIsInNjb3BlcyI6WyJhZG1pbiJdfQ.my4LIzqVutcecvMNIrXeJLefOt9_mFAyqhM9sZq6Y5nX-_7-o5lFMhdfLPzb3Xz0uej32ufXUkjO-dOYw3JPRV3_95WQs1LrcqT1VW728bnVsfrZDadFPyL9pqph0mQ_GGAA8HWN_BHxzd8O-XYoU4HtUa5nOJvruOb40NvePRNHpiWO-AGX0yKgCF0jDEmtkrwzyYjDQCtzaRd6pRSflc7Pc2XC7okqGQY5Sr9Um28KizQXKYExmWjlAWu9IiHfiQKskfOpM2EzL1Upu1AeH2ERZSLQAT4O9SHvCHrLNvShIc2IM9m7hWUCkdhkiJOOXnJEk9TbQD_foP__bIpAGINzMeUNDDeZc5kEyuPm-yKXDfoekobupiHX2SB2S_tkq2jJWX63Z0m11v1RMms-RLxRBKhfvXaOqWzm5Hx5S6sEFxT6iNtRiwQRXJZ9c-39100re_4Ll4ENUJuD5_Yy_7mvEniRakDlbvnrfv3WMHQl5JHVHJUNHcmVLE8uZulQHXc2hW1nNGnV_Z6_AxHaNTMPGM_1__-1ONFETOHwFiZy0bejF99SiqybEr3BISYWaPSQ0T9xYYfFqJ32wn0LwKQQ2thNfbtagLnANot1CZk-fH59NAajVK5xS4WO5coDzC74u-38z6h1A2UqXfVkNTOeNwGpszupqM2ie67ruOA"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"subject_title\" : \"سال هفتم دبستان\",\n\t\"lesson_id\" : 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/subject/4",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"subject",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Teachers",
+			"item": [
+				{
+					"name": "add teacher",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTQyYmJhNGQ5ZmZjZDA5YWQ2ZTI4NWYyNzFjM2Q4YjNhMzgxZDUxZDI5OWM0MzU5MWRhYjI4NjQyMGNlODljNTI5YWU3MTkxNjI2N2JhYWIiLCJpYXQiOjE1ODgwMTA0MDIsIm5iZiI6MTU4ODAxMDQwMiwiZXhwIjoxNjE5NTQ2NDAyLCJzdWIiOiIxIiwic2NvcGVzIjpbImFkbWluIl19.js0FyI34pIxS8TnOzGcleGt2GdjMnYkm6Yi4dsm48ejI7Xh-x6ajnS8r6tzDUO3aaf6xM2YvVejylG3OismLtOp3m-axzC_9pe3BgCBFi-7_BzaWRjU8kNKRcadnkYK1jcvBK8AsuvCT65OO2kRs9hJvMAStHTMn3J5h9l72S3DMSPlNxMUQ3iJgF8T2y0lX67RHWo6wTKG_kiQQjmQgtUXqQvENVkSXcQ2D037kZARN81rUdPBG42x1gYc70hMmRqtQGviMMqAfYefHahVrk5rjkJD8d6yY_IDVOIqVNfQtwEU6X5IQfuMXJKF47drLxlJ0fqD216AKVz7e8h8yMDdJdBBPcKoRiHu5avEVm7zmGwrh_-2K5jvF7NZmoTLE-nGmdH3rjTIgI2mzsd8fWEF6-R2MwuoLB8V9IphtYGTpMuDVIustykBImN8n1Zir1dGY1AvvUo4DulPe7iFQYuHe0wWjiOCa3ez5rbuuxPDyhK2jH5stDOibLo3RAldExwep5SViur7j-kjlZ-WNWvdpXxFa9A9fcW69WNbMj9B9153pRT-5HbY-Fat6gMvWTt_LUNRni7zURBDD2iWMMLragYr8rZpIy_99PSVRrTWDrH-ffWp5dLP2rreB0qG_SpDhd9sFi7aenxkDLgiJ415hJzaagNu9jY2IJHwlvpc"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "is_global",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "09357654321",
+									"type": "text"
+								},
+								{
+									"key": "fullName",
+									"value": "naeim",
+									"type": "text"
+								},
+								{
+									"key": "city_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "grade_id",
+									"value": "1",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://teaching.webtab.co/api/v1/teacher",
+							"protocol": "http",
+							"host": [
+								"teaching",
+								"webtab",
+								"co"
+							],
+							"path": [
+								"api",
+								"v1",
+								"teacher"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get teacher",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGJjZTY2NWU5MDY1OWEwYzI4YzdhMDJmYjc2ZmI4MTVmODcwMjAyMjdjZDJhYWQ2YjNkZGZhMDBiYjY0M2FjNTRiNWU0MjYyN2QxNTE2Y2UiLCJpYXQiOjE1ODkzNzcwODMsIm5iZiI6MTU4OTM3NzA4MywiZXhwIjoxNjIwOTEzMDgzLCJzdWIiOiIxMCIsInNjb3BlcyI6WyJhZG1pbiJdfQ.my4LIzqVutcecvMNIrXeJLefOt9_mFAyqhM9sZq6Y5nX-_7-o5lFMhdfLPzb3Xz0uej32ufXUkjO-dOYw3JPRV3_95WQs1LrcqT1VW728bnVsfrZDadFPyL9pqph0mQ_GGAA8HWN_BHxzd8O-XYoU4HtUa5nOJvruOb40NvePRNHpiWO-AGX0yKgCF0jDEmtkrwzyYjDQCtzaRd6pRSflc7Pc2XC7okqGQY5Sr9Um28KizQXKYExmWjlAWu9IiHfiQKskfOpM2EzL1Upu1AeH2ERZSLQAT4O9SHvCHrLNvShIc2IM9m7hWUCkdhkiJOOXnJEk9TbQD_foP__bIpAGINzMeUNDDeZc5kEyuPm-yKXDfoekobupiHX2SB2S_tkq2jJWX63Z0m11v1RMms-RLxRBKhfvXaOqWzm5Hx5S6sEFxT6iNtRiwQRXJZ9c-39100re_4Ll4ENUJuD5_Yy_7mvEniRakDlbvnrfv3WMHQl5JHVHJUNHcmVLE8uZulQHXc2hW1nNGnV_Z6_AxHaNTMPGM_1__-1ONFETOHwFiZy0bejF99SiqybEr3BISYWaPSQ0T9xYYfFqJ32wn0LwKQQ2thNfbtagLnANot1CZk-fH59NAajVK5xS4WO5coDzC74u-38z6h1A2UqXfVkNTOeNwGpszupqM2ie67ruOA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/teacher/5",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"teacher",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete teacher",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGJjZTY2NWU5MDY1OWEwYzI4YzdhMDJmYjc2ZmI4MTVmODcwMjAyMjdjZDJhYWQ2YjNkZGZhMDBiYjY0M2FjNTRiNWU0MjYyN2QxNTE2Y2UiLCJpYXQiOjE1ODkzNzcwODMsIm5iZiI6MTU4OTM3NzA4MywiZXhwIjoxNjIwOTEzMDgzLCJzdWIiOiIxMCIsInNjb3BlcyI6WyJhZG1pbiJdfQ.my4LIzqVutcecvMNIrXeJLefOt9_mFAyqhM9sZq6Y5nX-_7-o5lFMhdfLPzb3Xz0uej32ufXUkjO-dOYw3JPRV3_95WQs1LrcqT1VW728bnVsfrZDadFPyL9pqph0mQ_GGAA8HWN_BHxzd8O-XYoU4HtUa5nOJvruOb40NvePRNHpiWO-AGX0yKgCF0jDEmtkrwzyYjDQCtzaRd6pRSflc7Pc2XC7okqGQY5Sr9Um28KizQXKYExmWjlAWu9IiHfiQKskfOpM2EzL1Upu1AeH2ERZSLQAT4O9SHvCHrLNvShIc2IM9m7hWUCkdhkiJOOXnJEk9TbQD_foP__bIpAGINzMeUNDDeZc5kEyuPm-yKXDfoekobupiHX2SB2S_tkq2jJWX63Z0m11v1RMms-RLxRBKhfvXaOqWzm5Hx5S6sEFxT6iNtRiwQRXJZ9c-39100re_4Ll4ENUJuD5_Yy_7mvEniRakDlbvnrfv3WMHQl5JHVHJUNHcmVLE8uZulQHXc2hW1nNGnV_Z6_AxHaNTMPGM_1__-1ONFETOHwFiZy0bejF99SiqybEr3BISYWaPSQ0T9xYYfFqJ32wn0LwKQQ2thNfbtagLnANot1CZk-fH59NAajVK5xS4WO5coDzC74u-38z6h1A2UqXfVkNTOeNwGpszupqM2ie67ruOA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/teacher/1",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"teacher",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search teacher",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGJjZTY2NWU5MDY1OWEwYzI4YzdhMDJmYjc2ZmI4MTVmODcwMjAyMjdjZDJhYWQ2YjNkZGZhMDBiYjY0M2FjNTRiNWU0MjYyN2QxNTE2Y2UiLCJpYXQiOjE1ODkzNzcwODMsIm5iZiI6MTU4OTM3NzA4MywiZXhwIjoxNjIwOTEzMDgzLCJzdWIiOiIxMCIsInNjb3BlcyI6WyJhZG1pbiJdfQ.my4LIzqVutcecvMNIrXeJLefOt9_mFAyqhM9sZq6Y5nX-_7-o5lFMhdfLPzb3Xz0uej32ufXUkjO-dOYw3JPRV3_95WQs1LrcqT1VW728bnVsfrZDadFPyL9pqph0mQ_GGAA8HWN_BHxzd8O-XYoU4HtUa5nOJvruOb40NvePRNHpiWO-AGX0yKgCF0jDEmtkrwzyYjDQCtzaRd6pRSflc7Pc2XC7okqGQY5Sr9Um28KizQXKYExmWjlAWu9IiHfiQKskfOpM2EzL1Upu1AeH2ERZSLQAT4O9SHvCHrLNvShIc2IM9m7hWUCkdhkiJOOXnJEk9TbQD_foP__bIpAGINzMeUNDDeZc5kEyuPm-yKXDfoekobupiHX2SB2S_tkq2jJWX63Z0m11v1RMms-RLxRBKhfvXaOqWzm5Hx5S6sEFxT6iNtRiwQRXJZ9c-39100re_4Ll4ENUJuD5_Yy_7mvEniRakDlbvnrfv3WMHQl5JHVHJUNHcmVLE8uZulQHXc2hW1nNGnV_Z6_AxHaNTMPGM_1__-1ONFETOHwFiZy0bejF99SiqybEr3BISYWaPSQ0T9xYYfFqJ32wn0LwKQQ2thNfbtagLnANot1CZk-fH59NAajVK5xS4WO5coDzC74u-38z6h1A2UqXfVkNTOeNwGpszupqM2ie67ruOA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "fullname",
+									"value": "ا",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/search_teacher?page=1",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"search_teacher"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show teacher with subject",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTI1NGE3NzkwZmQxNmM0ODFlZDcwNTFjNjg0NDA2OTI5ZTVkM2I2Y2E4MDE2ZDlmMTU1MTI5NzA2MTUxZWZhNmI1ZjY3Y2YxNDNmNzIwMGUiLCJpYXQiOjE1ODk1MzMyMzIsIm5iZiI6MTU4OTUzMzIzMiwiZXhwIjoxNjIxMDY5MjMyLCJzdWIiOiIxMSIsInNjb3BlcyI6WyJ1c2VyIl19.R8ESWkUnul_VYqkjxDzQ0kzPi65SZ0kE1RKq3BHQuTakHYO4EllZMk5rntk4Etj6bg_3nSxhx6qEmqOwazmXcKYKSnWnBEypRAGTcnbNo8aTk-zdkGjSN3vYIJionGkT2r2WoJxUWfhBBc165zAE29_AzvpIAcqGrlFeM5C93hIcv4_uyD2f7sJr07c7-7FRvF0AFEDW4c0hzE3DSBDVs6Jhr5FHHB8iX9l2Q2YQCz5mGKFnYYU1ksHFHD-x8IOcXkbf6OTrClbADNeGAS8FrahDoV1-ze3aEHs1rfzlhlar4Arb0lcSrHHHXOcn1sPQBcHlUoLghd3ozPquHASCrFFrLeIemHIZvR9lkXCmhNh7P6nCdLfB8BmDhuOKJ8eS4d8Ox7tLwrizS6rtKSBnH6ESwK7f1dpskF8tu1PwD8wC02IYLvsMPhC6LKo28Zfm5Kga2WgqVpb6aUL6Qv_86SH2mQ-q6NOzuozBJ1PzI2znQKoS56YjQ5Q2NhHVpFFaMlvth_q5WAVMeJzbMcXWJSU8Nc-HvVj86zbrRF8okwue66YLreGVa2hYn60u_ZyaSVnw1TQAZ1Eq72zYPy2oXXNkByl8qwHFQihFMSrcpn8AHVHOCyjmbxjPx6_Plx4P0zd2slr6q-YK9lGQldlbyqcTqFH3hF-dGMQp1an_iL4"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "subject_id",
+									"value": "5",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/search_teacher_with_sub",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"search_teacher_with_sub"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show teacher with subject user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMWRlODhlN2Y4ZDFkNTAyOWIyMDQ5YzkzYzUxNmNiODhiYjZhZWY1M2RkYzQxOTM4OWJjZDFlYWE0Mzk4ZTBlZDU4ZDYzMjRiNjQ1ZWMxNjQiLCJpYXQiOjE1OTA3MDIxNjUsIm5iZiI6MTU5MDcwMjE2NSwiZXhwIjoxNjIyMjM4MTY1LCJzdWIiOiIxMSIsInNjb3BlcyI6WyJ1c2VyIl19.wlzeAkRJdwEQm7Q1q_wNLcaYAK29urI5DgaDwGEk840YimBk4v1BBYlF3q-fxXd8mrcYvKdp9dphVA_oRi2recG9S-QI3k2AREQlQMy9VL4BiWRX3Yx_g24CvdlQIBj6oJ5iToCRIa1YkiyWa6K38xCGt_RE3L-WLVwRutIAYN5MoVSDFiMp_HUMK64RNBNU9_TZ5Yv-nycb7M29b_euJcsN5SZ5enlvinkWJc4XZ6TNex7874jYtplGixUVSCcdDXI9_SRjK6ttIx1eP7rH2tRPtTfbUDnOtILO-0ku57q05U7FF7p9KWySGlQOQ-uSwGywIhDMoiSVQ2ya7vonjBFLL6ouMqJwmjksRjNEDQz8KzPaS8pk7Z6eFCTEzSoiw8x-99DZWaVu62kF3UorKO5OAGDFsN2JZrZ2SHbE3CLYKO6frKsa7R_e80CosnxhET_1BBdFv90klpA02FFr2IXe-g2GmEKvKd_Mb0xhyE1eqB5uu9YWNPEb4gYbqdUHgm7PCRsbZF29ffvgO8dBOG8Zq1pHhudxOAz37BX7T6247RasWPznHlhisL8ZbHNZOHhSqAzqxVqU36PcE4nq9mDImP37mrh5_yeuVK1HYt3VSwu2isaiSUiH0ihdL9u_b5r1uvIFJr2MLcC1F-bNoTi5nIveAXOZ-NFoG02kQdE"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "subject_id",
+									"value": "45",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/user_search_teacher_with_sub",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user_search_teacher_with_sub"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit teacher",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGJjZTY2NWU5MDY1OWEwYzI4YzdhMDJmYjc2ZmI4MTVmODcwMjAyMjdjZDJhYWQ2YjNkZGZhMDBiYjY0M2FjNTRiNWU0MjYyN2QxNTE2Y2UiLCJpYXQiOjE1ODkzNzcwODMsIm5iZiI6MTU4OTM3NzA4MywiZXhwIjoxNjIwOTEzMDgzLCJzdWIiOiIxMCIsInNjb3BlcyI6WyJhZG1pbiJdfQ.my4LIzqVutcecvMNIrXeJLefOt9_mFAyqhM9sZq6Y5nX-_7-o5lFMhdfLPzb3Xz0uej32ufXUkjO-dOYw3JPRV3_95WQs1LrcqT1VW728bnVsfrZDadFPyL9pqph0mQ_GGAA8HWN_BHxzd8O-XYoU4HtUa5nOJvruOb40NvePRNHpiWO-AGX0yKgCF0jDEmtkrwzyYjDQCtzaRd6pRSflc7Pc2XC7okqGQY5Sr9Um28KizQXKYExmWjlAWu9IiHfiQKskfOpM2EzL1Upu1AeH2ERZSLQAT4O9SHvCHrLNvShIc2IM9m7hWUCkdhkiJOOXnJEk9TbQD_foP__bIpAGINzMeUNDDeZc5kEyuPm-yKXDfoekobupiHX2SB2S_tkq2jJWX63Z0m11v1RMms-RLxRBKhfvXaOqWzm5Hx5S6sEFxT6iNtRiwQRXJZ9c-39100re_4Ll4ENUJuD5_Yy_7mvEniRakDlbvnrfv3WMHQl5JHVHJUNHcmVLE8uZulQHXc2hW1nNGnV_Z6_AxHaNTMPGM_1__-1ONFETOHwFiZy0bejF99SiqybEr3BISYWaPSQ0T9xYYfFqJ32wn0LwKQQ2thNfbtagLnANot1CZk-fH59NAajVK5xS4WO5coDzC74u-38z6h1A2UqXfVkNTOeNwGpszupqM2ie67ruOA"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"teacher_name\" : \"سال هفتم دبستان\",\n\t\"teacher_phone\" : \"09123214587\",\n\t\"grade_id\": 1,\n\t\"city_id\" : 2,\n\t\"is_global\" : 0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/teacher/5",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"teacher",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Section",
+			"item": [
+				{
+					"name": "add section",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGJjZTY2NWU5MDY1OWEwYzI4YzdhMDJmYjc2ZmI4MTVmODcwMjAyMjdjZDJhYWQ2YjNkZGZhMDBiYjY0M2FjNTRiNWU0MjYyN2QxNTE2Y2UiLCJpYXQiOjE1ODkzNzcwODMsIm5iZiI6MTU4OTM3NzA4MywiZXhwIjoxNjIwOTEzMDgzLCJzdWIiOiIxMCIsInNjb3BlcyI6WyJhZG1pbiJdfQ.my4LIzqVutcecvMNIrXeJLefOt9_mFAyqhM9sZq6Y5nX-_7-o5lFMhdfLPzb3Xz0uej32ufXUkjO-dOYw3JPRV3_95WQs1LrcqT1VW728bnVsfrZDadFPyL9pqph0mQ_GGAA8HWN_BHxzd8O-XYoU4HtUa5nOJvruOb40NvePRNHpiWO-AGX0yKgCF0jDEmtkrwzyYjDQCtzaRd6pRSflc7Pc2XC7okqGQY5Sr9Um28KizQXKYExmWjlAWu9IiHfiQKskfOpM2EzL1Upu1AeH2ERZSLQAT4O9SHvCHrLNvShIc2IM9m7hWUCkdhkiJOOXnJEk9TbQD_foP__bIpAGINzMeUNDDeZc5kEyuPm-yKXDfoekobupiHX2SB2S_tkq2jJWX63Z0m11v1RMms-RLxRBKhfvXaOqWzm5Hx5S6sEFxT6iNtRiwQRXJZ9c-39100re_4Ll4ENUJuD5_Yy_7mvEniRakDlbvnrfv3WMHQl5JHVHJUNHcmVLE8uZulQHXc2hW1nNGnV_Z6_AxHaNTMPGM_1__-1ONFETOHwFiZy0bejF99SiqybEr3BISYWaPSQ0T9xYYfFqJ32wn0LwKQQ2thNfbtagLnANot1CZk-fH59NAajVK5xS4WO5coDzC74u-38z6h1A2UqXfVkNTOeNwGpszupqM2ie67ruOA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "سکشن 1",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "15000",
+									"type": "text"
+								},
+								{
+									"key": "gift_price",
+									"value": "5000",
+									"type": "text"
+								},
+								{
+									"key": "early_price",
+									"value": "500000",
+									"type": "text"
+								},
+								{
+									"key": "award",
+									"value": "12000",
+									"type": "text"
+								},
+								{
+									"key": "helper_award",
+									"value": "20000",
+									"type": "text"
+								},
+								{
+									"key": "teacher_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "subject_id",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "quiz_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "opening_date",
+									"value": "1397/09/30",
+									"type": "text"
+								},
+								{
+									"key": "can_pass",
+									"value": "1",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/section",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"section"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buy section",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYjA1NzhmNDA3ZDJjYTU5OTEzYTRjODg2ZGY4MDc5NDY3NDQ0OTQ0YjkzMDA3Njc4MzEyNTU1YjU3NWU0NTQ1NzZkMDg1OTMzZDE4YmJkZWUiLCJpYXQiOjE1OTE1NDk3NDEsIm5iZiI6MTU5MTU0OTc0MSwiZXhwIjoxNjIzMDg1NzQxLCJzdWIiOiI0MiIsInNjb3BlcyI6WyJ1c2VyIl19.c7AqrNNsht-CDhcd2G1N1DvnfpMqpZ69CbrQDX8HQBM5RsLr8AyoA-vM02jqvjLiz4F1pX-tEAdYXkikJsEl-eTPN5X824JXtzH6ZDrReiFGwHeT9XEzZ1fklnokVV3YjwoqqVR3ts7JaS6ZXI2HV3ivXKn2cg84C4YL1K-0GJzKNAsxbxnFp-kcmteYcYBYv77to2A1Gz0bjEDGlx7zTsfTgnvPXF0XpO0USz4PR5XROMqp9KlnY743BF_NlBc875HBLoL8Q5vEk3vByT8PLdFHQcC6TkZMbBAsOKi8Q30D54NuosmY_qDnjQ4GRZ5JfImbBUOBwPygiFoz3_q6NvUNHLQsMmH_8CDtnOy7aAbyY5X1Ge5yV-GuJFMJ-rpcRTfAqVO-LNXIn2gFnkBLf1AXY9mFxiG9-lyH5xNPbFzpGmYjzpKiuhYOqmn_JbarRTjXUarDwcwzYzA2nGrZiuWKNZoTxtFdo-D0Q_t7OrCKYEW6NbzWlncWQ2zDi0jQK7ELM6AkxV2fNsSSX64DF0dUkxsYX0CdQAaHBzDE_pZS7XON_8e7X_dJn3idJXjTeRVS1qtI0r1zx7iTwMHG92Jh0eNJvyIc6H2uatwR_avlWwms-cutHhd6tawA2DRhZMWjw0ZyQKVThIwikowgCD0bNH_0b-31IBGIeMDi2mY"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "section_id",
+									"value": "9",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/buy_section",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"buy_section"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get sections with subject id and teacher id",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTQyYmJhNGQ5ZmZjZDA5YWQ2ZTI4NWYyNzFjM2Q4YjNhMzgxZDUxZDI5OWM0MzU5MWRhYjI4NjQyMGNlODljNTI5YWU3MTkxNjI2N2JhYWIiLCJpYXQiOjE1ODgwMTA0MDIsIm5iZiI6MTU4ODAxMDQwMiwiZXhwIjoxNjE5NTQ2NDAyLCJzdWIiOiIxIiwic2NvcGVzIjpbImFkbWluIl19.js0FyI34pIxS8TnOzGcleGt2GdjMnYkm6Yi4dsm48ejI7Xh-x6ajnS8r6tzDUO3aaf6xM2YvVejylG3OismLtOp3m-axzC_9pe3BgCBFi-7_BzaWRjU8kNKRcadnkYK1jcvBK8AsuvCT65OO2kRs9hJvMAStHTMn3J5h9l72S3DMSPlNxMUQ3iJgF8T2y0lX67RHWo6wTKG_kiQQjmQgtUXqQvENVkSXcQ2D037kZARN81rUdPBG42x1gYc70hMmRqtQGviMMqAfYefHahVrk5rjkJD8d6yY_IDVOIqVNfQtwEU6X5IQfuMXJKF47drLxlJ0fqD216AKVz7e8h8yMDdJdBBPcKoRiHu5avEVm7zmGwrh_-2K5jvF7NZmoTLE-nGmdH3rjTIgI2mzsd8fWEF6-R2MwuoLB8V9IphtYGTpMuDVIustykBImN8n1Zir1dGY1AvvUo4DulPe7iFQYuHe0wWjiOCa3ez5rbuuxPDyhK2jH5stDOibLo3RAldExwep5SViur7j-kjlZ-WNWvdpXxFa9A9fcW69WNbMj9B9153pRT-5HbY-Fat6gMvWTt_LUNRni7zURBDD2iWMMLragYr8rZpIy_99PSVRrTWDrH-ffWp5dLP2rreB0qG_SpDhd9sFi7aenxkDLgiJ415hJzaagNu9jY2IJHwlvpc"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "teacher_id",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "subject_id",
+									"value": "4",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://teaching.webtab.co/api/v1/search_section",
+							"protocol": "http",
+							"host": [
+								"teaching",
+								"webtab",
+								"co"
+							],
+							"path": [
+								"api",
+								"v1",
+								"search_section"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get user sections",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYjA1NzhmNDA3ZDJjYTU5OTEzYTRjODg2ZGY4MDc5NDY3NDQ0OTQ0YjkzMDA3Njc4MzEyNTU1YjU3NWU0NTQ1NzZkMDg1OTMzZDE4YmJkZWUiLCJpYXQiOjE1OTE1NDk3NDEsIm5iZiI6MTU5MTU0OTc0MSwiZXhwIjoxNjIzMDg1NzQxLCJzdWIiOiI0MiIsInNjb3BlcyI6WyJ1c2VyIl19.c7AqrNNsht-CDhcd2G1N1DvnfpMqpZ69CbrQDX8HQBM5RsLr8AyoA-vM02jqvjLiz4F1pX-tEAdYXkikJsEl-eTPN5X824JXtzH6ZDrReiFGwHeT9XEzZ1fklnokVV3YjwoqqVR3ts7JaS6ZXI2HV3ivXKn2cg84C4YL1K-0GJzKNAsxbxnFp-kcmteYcYBYv77to2A1Gz0bjEDGlx7zTsfTgnvPXF0XpO0USz4PR5XROMqp9KlnY743BF_NlBc875HBLoL8Q5vEk3vByT8PLdFHQcC6TkZMbBAsOKi8Q30D54NuosmY_qDnjQ4GRZ5JfImbBUOBwPygiFoz3_q6NvUNHLQsMmH_8CDtnOy7aAbyY5X1Ge5yV-GuJFMJ-rpcRTfAqVO-LNXIn2gFnkBLf1AXY9mFxiG9-lyH5xNPbFzpGmYjzpKiuhYOqmn_JbarRTjXUarDwcwzYzA2nGrZiuWKNZoTxtFdo-D0Q_t7OrCKYEW6NbzWlncWQ2zDi0jQK7ELM6AkxV2fNsSSX64DF0dUkxsYX0CdQAaHBzDE_pZS7XON_8e7X_dJn3idJXjTeRVS1qtI0r1zx7iTwMHG92Jh0eNJvyIc6H2uatwR_avlWwms-cutHhd6tawA2DRhZMWjw0ZyQKVThIwikowgCD0bNH_0b-31IBGIeMDi2mY"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "teacher_id",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "subject_id",
+									"value": "7",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/user_search_section",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user_search_section"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit section",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGJjZTY2NWU5MDY1OWEwYzI4YzdhMDJmYjc2ZmI4MTVmODcwMjAyMjdjZDJhYWQ2YjNkZGZhMDBiYjY0M2FjNTRiNWU0MjYyN2QxNTE2Y2UiLCJpYXQiOjE1ODkzNzcwODMsIm5iZiI6MTU4OTM3NzA4MywiZXhwIjoxNjIwOTEzMDgzLCJzdWIiOiIxMCIsInNjb3BlcyI6WyJhZG1pbiJdfQ.my4LIzqVutcecvMNIrXeJLefOt9_mFAyqhM9sZq6Y5nX-_7-o5lFMhdfLPzb3Xz0uej32ufXUkjO-dOYw3JPRV3_95WQs1LrcqT1VW728bnVsfrZDadFPyL9pqph0mQ_GGAA8HWN_BHxzd8O-XYoU4HtUa5nOJvruOb40NvePRNHpiWO-AGX0yKgCF0jDEmtkrwzyYjDQCtzaRd6pRSflc7Pc2XC7okqGQY5Sr9Um28KizQXKYExmWjlAWu9IiHfiQKskfOpM2EzL1Upu1AeH2ERZSLQAT4O9SHvCHrLNvShIc2IM9m7hWUCkdhkiJOOXnJEk9TbQD_foP__bIpAGINzMeUNDDeZc5kEyuPm-yKXDfoekobupiHX2SB2S_tkq2jJWX63Z0m11v1RMms-RLxRBKhfvXaOqWzm5Hx5S6sEFxT6iNtRiwQRXJZ9c-39100re_4Ll4ENUJuD5_Yy_7mvEniRakDlbvnrfv3WMHQl5JHVHJUNHcmVLE8uZulQHXc2hW1nNGnV_Z6_AxHaNTMPGM_1__-1ONFETOHwFiZy0bejF99SiqybEr3BISYWaPSQ0T9xYYfFqJ32wn0LwKQQ2thNfbtagLnANot1CZk-fH59NAajVK5xS4WO5coDzC74u-38z6h1A2UqXfVkNTOeNwGpszupqM2ie67ruOA"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\" : \"سال هفتم دبستان\",\n\t\"price\" : 2000,\n\t\"gift_price\" : 25000,\n\t\"early_price\" : 5000,\n\t\"award\" : 2000,\n\t\"helper_award\" : 3000,\n\t\"teacher_id\" : 5,\n\t\"subject_id\" : 2,\n\t\"quiz_id\" : 2,\n\t\"pre_section_id\": 3,\n\t\"can_pass\" : 1,\n\t\"opening_date\" : \"1397/05/03\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/section/9",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"section",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete section",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGJjZTY2NWU5MDY1OWEwYzI4YzdhMDJmYjc2ZmI4MTVmODcwMjAyMjdjZDJhYWQ2YjNkZGZhMDBiYjY0M2FjNTRiNWU0MjYyN2QxNTE2Y2UiLCJpYXQiOjE1ODkzNzcwODMsIm5iZiI6MTU4OTM3NzA4MywiZXhwIjoxNjIwOTEzMDgzLCJzdWIiOiIxMCIsInNjb3BlcyI6WyJhZG1pbiJdfQ.my4LIzqVutcecvMNIrXeJLefOt9_mFAyqhM9sZq6Y5nX-_7-o5lFMhdfLPzb3Xz0uej32ufXUkjO-dOYw3JPRV3_95WQs1LrcqT1VW728bnVsfrZDadFPyL9pqph0mQ_GGAA8HWN_BHxzd8O-XYoU4HtUa5nOJvruOb40NvePRNHpiWO-AGX0yKgCF0jDEmtkrwzyYjDQCtzaRd6pRSflc7Pc2XC7okqGQY5Sr9Um28KizQXKYExmWjlAWu9IiHfiQKskfOpM2EzL1Upu1AeH2ERZSLQAT4O9SHvCHrLNvShIc2IM9m7hWUCkdhkiJOOXnJEk9TbQD_foP__bIpAGINzMeUNDDeZc5kEyuPm-yKXDfoekobupiHX2SB2S_tkq2jJWX63Z0m11v1RMms-RLxRBKhfvXaOqWzm5Hx5S6sEFxT6iNtRiwQRXJZ9c-39100re_4Ll4ENUJuD5_Yy_7mvEniRakDlbvnrfv3WMHQl5JHVHJUNHcmVLE8uZulQHXc2hW1nNGnV_Z6_AxHaNTMPGM_1__-1ONFETOHwFiZy0bejF99SiqybEr3BISYWaPSQ0T9xYYfFqJ32wn0LwKQQ2thNfbtagLnANot1CZk-fH59NAajVK5xS4WO5coDzC74u-38z6h1A2UqXfVkNTOeNwGpszupqM2ie67ruOA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/section/2",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"section",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Quiz",
+			"item": [
+				{
+					"name": "add quiz",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGJjZTY2NWU5MDY1OWEwYzI4YzdhMDJmYjc2ZmI4MTVmODcwMjAyMjdjZDJhYWQ2YjNkZGZhMDBiYjY0M2FjNTRiNWU0MjYyN2QxNTE2Y2UiLCJpYXQiOjE1ODkzNzcwODMsIm5iZiI6MTU4OTM3NzA4MywiZXhwIjoxNjIwOTEzMDgzLCJzdWIiOiIxMCIsInNjb3BlcyI6WyJhZG1pbiJdfQ.my4LIzqVutcecvMNIrXeJLefOt9_mFAyqhM9sZq6Y5nX-_7-o5lFMhdfLPzb3Xz0uej32ufXUkjO-dOYw3JPRV3_95WQs1LrcqT1VW728bnVsfrZDadFPyL9pqph0mQ_GGAA8HWN_BHxzd8O-XYoU4HtUa5nOJvruOb40NvePRNHpiWO-AGX0yKgCF0jDEmtkrwzyYjDQCtzaRd6pRSflc7Pc2XC7okqGQY5Sr9Um28KizQXKYExmWjlAWu9IiHfiQKskfOpM2EzL1Upu1AeH2ERZSLQAT4O9SHvCHrLNvShIc2IM9m7hWUCkdhkiJOOXnJEk9TbQD_foP__bIpAGINzMeUNDDeZc5kEyuPm-yKXDfoekobupiHX2SB2S_tkq2jJWX63Z0m11v1RMms-RLxRBKhfvXaOqWzm5Hx5S6sEFxT6iNtRiwQRXJZ9c-39100re_4Ll4ENUJuD5_Yy_7mvEniRakDlbvnrfv3WMHQl5JHVHJUNHcmVLE8uZulQHXc2hW1nNGnV_Z6_AxHaNTMPGM_1__-1ONFETOHwFiZy0bejF99SiqybEr3BISYWaPSQ0T9xYYfFqJ32wn0LwKQQ2thNfbtagLnANot1CZk-fH59NAajVK5xS4WO5coDzC74u-38z6h1A2UqXfVkNTOeNwGpszupqM2ie67ruOA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "quiz_title",
+									"value": "آزمون شماره یک",
+									"type": "text"
+								},
+								{
+									"key": "quiz_date",
+									"value": "1397/09/30",
+									"type": "text"
+								},
+								{
+									"key": "quiz_time",
+									"value": "120",
+									"description": "on minute",
+									"type": "text"
+								},
+								{
+									"key": "award",
+									"value": "12000",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "10000",
+									"type": "text"
+								},
+								{
+									"key": "gift_price",
+									"value": "20000",
+									"type": "text"
+								},
+								{
+									"key": "early_price",
+									"value": "2000000",
+									"type": "text"
+								},
+								{
+									"key": "answer_file",
+									"type": "file",
+									"src": "/F:/Users/Naeim/Downloads/Fonts/IRANSans5_5/IRANSans/Farsi_numerals/English to Farsi numbers help.pdf"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/quiz",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"quiz"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show quiz",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTQyYmJhNGQ5ZmZjZDA5YWQ2ZTI4NWYyNzFjM2Q4YjNhMzgxZDUxZDI5OWM0MzU5MWRhYjI4NjQyMGNlODljNTI5YWU3MTkxNjI2N2JhYWIiLCJpYXQiOjE1ODgwMTA0MDIsIm5iZiI6MTU4ODAxMDQwMiwiZXhwIjoxNjE5NTQ2NDAyLCJzdWIiOiIxIiwic2NvcGVzIjpbImFkbWluIl19.js0FyI34pIxS8TnOzGcleGt2GdjMnYkm6Yi4dsm48ejI7Xh-x6ajnS8r6tzDUO3aaf6xM2YvVejylG3OismLtOp3m-axzC_9pe3BgCBFi-7_BzaWRjU8kNKRcadnkYK1jcvBK8AsuvCT65OO2kRs9hJvMAStHTMn3J5h9l72S3DMSPlNxMUQ3iJgF8T2y0lX67RHWo6wTKG_kiQQjmQgtUXqQvENVkSXcQ2D037kZARN81rUdPBG42x1gYc70hMmRqtQGviMMqAfYefHahVrk5rjkJD8d6yY_IDVOIqVNfQtwEU6X5IQfuMXJKF47drLxlJ0fqD216AKVz7e8h8yMDdJdBBPcKoRiHu5avEVm7zmGwrh_-2K5jvF7NZmoTLE-nGmdH3rjTIgI2mzsd8fWEF6-R2MwuoLB8V9IphtYGTpMuDVIustykBImN8n1Zir1dGY1AvvUo4DulPe7iFQYuHe0wWjiOCa3ez5rbuuxPDyhK2jH5stDOibLo3RAldExwep5SViur7j-kjlZ-WNWvdpXxFa9A9fcW69WNbMj9B9153pRT-5HbY-Fat6gMvWTt_LUNRni7zURBDD2iWMMLragYr8rZpIy_99PSVRrTWDrH-ffWp5dLP2rreB0qG_SpDhd9sFi7aenxkDLgiJ415hJzaagNu9jY2IJHwlvpc"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://teaching.webtab.co/api/v1/show_quiz?page=1",
+							"protocol": "http",
+							"host": [
+								"teaching",
+								"webtab",
+								"co"
+							],
+							"path": [
+								"api",
+								"v1",
+								"show_quiz"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search quiz",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTQyYmJhNGQ5ZmZjZDA5YWQ2ZTI4NWYyNzFjM2Q4YjNhMzgxZDUxZDI5OWM0MzU5MWRhYjI4NjQyMGNlODljNTI5YWU3MTkxNjI2N2JhYWIiLCJpYXQiOjE1ODgwMTA0MDIsIm5iZiI6MTU4ODAxMDQwMiwiZXhwIjoxNjE5NTQ2NDAyLCJzdWIiOiIxIiwic2NvcGVzIjpbImFkbWluIl19.js0FyI34pIxS8TnOzGcleGt2GdjMnYkm6Yi4dsm48ejI7Xh-x6ajnS8r6tzDUO3aaf6xM2YvVejylG3OismLtOp3m-axzC_9pe3BgCBFi-7_BzaWRjU8kNKRcadnkYK1jcvBK8AsuvCT65OO2kRs9hJvMAStHTMn3J5h9l72S3DMSPlNxMUQ3iJgF8T2y0lX67RHWo6wTKG_kiQQjmQgtUXqQvENVkSXcQ2D037kZARN81rUdPBG42x1gYc70hMmRqtQGviMMqAfYefHahVrk5rjkJD8d6yY_IDVOIqVNfQtwEU6X5IQfuMXJKF47drLxlJ0fqD216AKVz7e8h8yMDdJdBBPcKoRiHu5avEVm7zmGwrh_-2K5jvF7NZmoTLE-nGmdH3rjTIgI2mzsd8fWEF6-R2MwuoLB8V9IphtYGTpMuDVIustykBImN8n1Zir1dGY1AvvUo4DulPe7iFQYuHe0wWjiOCa3ez5rbuuxPDyhK2jH5stDOibLo3RAldExwep5SViur7j-kjlZ-WNWvdpXxFa9A9fcW69WNbMj9B9153pRT-5HbY-Fat6gMvWTt_LUNRni7zURBDD2iWMMLragYr8rZpIy_99PSVRrTWDrH-ffWp5dLP2rreB0qG_SpDhd9sFi7aenxkDLgiJ415hJzaagNu9jY2IJHwlvpc"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "ا",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://teaching.webtab.co/api/v1/search_quiz",
+							"protocol": "http",
+							"host": [
+								"teaching",
+								"webtab",
+								"co"
+							],
+							"path": [
+								"api",
+								"v1",
+								"search_quiz"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "make quiz",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTI1NGE3NzkwZmQxNmM0ODFlZDcwNTFjNjg0NDA2OTI5ZTVkM2I2Y2E4MDE2ZDlmMTU1MTI5NzA2MTUxZWZhNmI1ZjY3Y2YxNDNmNzIwMGUiLCJpYXQiOjE1ODk1MzMyMzIsIm5iZiI6MTU4OTUzMzIzMiwiZXhwIjoxNjIxMDY5MjMyLCJzdWIiOiIxMSIsInNjb3BlcyI6WyJ1c2VyIl19.R8ESWkUnul_VYqkjxDzQ0kzPi65SZ0kE1RKq3BHQuTakHYO4EllZMk5rntk4Etj6bg_3nSxhx6qEmqOwazmXcKYKSnWnBEypRAGTcnbNo8aTk-zdkGjSN3vYIJionGkT2r2WoJxUWfhBBc165zAE29_AzvpIAcqGrlFeM5C93hIcv4_uyD2f7sJr07c7-7FRvF0AFEDW4c0hzE3DSBDVs6Jhr5FHHB8iX9l2Q2YQCz5mGKFnYYU1ksHFHD-x8IOcXkbf6OTrClbADNeGAS8FrahDoV1-ze3aEHs1rfzlhlar4Arb0lcSrHHHXOcn1sPQBcHlUoLghd3ozPquHASCrFFrLeIemHIZvR9lkXCmhNh7P6nCdLfB8BmDhuOKJ8eS4d8Ox7tLwrizS6rtKSBnH6ESwK7f1dpskF8tu1PwD8wC02IYLvsMPhC6LKo28Zfm5Kga2WgqVpb6aUL6Qv_86SH2mQ-q6NOzuozBJ1PzI2znQKoS56YjQ5Q2NhHVpFFaMlvth_q5WAVMeJzbMcXWJSU8Nc-HvVj86zbrRF8okwue66YLreGVa2hYn60u_ZyaSVnw1TQAZ1Eq72zYPy2oXXNkByl8qwHFQihFMSrcpn8AHVHOCyjmbxjPx6_Plx4P0zd2slr6q-YK9lGQldlbyqcTqFH3hF-dGMQp1an_iL4"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "lesson_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "how_many",
+									"value": "25",
+									"type": "text"
+								},
+								{
+									"key": "subject_id",
+									"value": "7",
+									"type": "text",
+									"disabled": true
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "https://api.amoozeshmelli.com/api/v1/make_quiz",
+							"protocol": "https",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"make_quiz"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show questions of quiz",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTI1NGE3NzkwZmQxNmM0ODFlZDcwNTFjNjg0NDA2OTI5ZTVkM2I2Y2E4MDE2ZDlmMTU1MTI5NzA2MTUxZWZhNmI1ZjY3Y2YxNDNmNzIwMGUiLCJpYXQiOjE1ODk1MzMyMzIsIm5iZiI6MTU4OTUzMzIzMiwiZXhwIjoxNjIxMDY5MjMyLCJzdWIiOiIxMSIsInNjb3BlcyI6WyJ1c2VyIl19.R8ESWkUnul_VYqkjxDzQ0kzPi65SZ0kE1RKq3BHQuTakHYO4EllZMk5rntk4Etj6bg_3nSxhx6qEmqOwazmXcKYKSnWnBEypRAGTcnbNo8aTk-zdkGjSN3vYIJionGkT2r2WoJxUWfhBBc165zAE29_AzvpIAcqGrlFeM5C93hIcv4_uyD2f7sJr07c7-7FRvF0AFEDW4c0hzE3DSBDVs6Jhr5FHHB8iX9l2Q2YQCz5mGKFnYYU1ksHFHD-x8IOcXkbf6OTrClbADNeGAS8FrahDoV1-ze3aEHs1rfzlhlar4Arb0lcSrHHHXOcn1sPQBcHlUoLghd3ozPquHASCrFFrLeIemHIZvR9lkXCmhNh7P6nCdLfB8BmDhuOKJ8eS4d8Ox7tLwrizS6rtKSBnH6ESwK7f1dpskF8tu1PwD8wC02IYLvsMPhC6LKo28Zfm5Kga2WgqVpb6aUL6Qv_86SH2mQ-q6NOzuozBJ1PzI2znQKoS56YjQ5Q2NhHVpFFaMlvth_q5WAVMeJzbMcXWJSU8Nc-HvVj86zbrRF8okwue66YLreGVa2hYn60u_ZyaSVnw1TQAZ1Eq72zYPy2oXXNkByl8qwHFQihFMSrcpn8AHVHOCyjmbxjPx6_Plx4P0zd2slr6q-YK9lGQldlbyqcTqFH3hF-dGMQp1an_iL4"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/show_questions_of_quiz/9",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"show_questions_of_quiz",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "complete_quiz",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTI1NGE3NzkwZmQxNmM0ODFlZDcwNTFjNjg0NDA2OTI5ZTVkM2I2Y2E4MDE2ZDlmMTU1MTI5NzA2MTUxZWZhNmI1ZjY3Y2YxNDNmNzIwMGUiLCJpYXQiOjE1ODk1MzMyMzIsIm5iZiI6MTU4OTUzMzIzMiwiZXhwIjoxNjIxMDY5MjMyLCJzdWIiOiIxMSIsInNjb3BlcyI6WyJ1c2VyIl19.R8ESWkUnul_VYqkjxDzQ0kzPi65SZ0kE1RKq3BHQuTakHYO4EllZMk5rntk4Etj6bg_3nSxhx6qEmqOwazmXcKYKSnWnBEypRAGTcnbNo8aTk-zdkGjSN3vYIJionGkT2r2WoJxUWfhBBc165zAE29_AzvpIAcqGrlFeM5C93hIcv4_uyD2f7sJr07c7-7FRvF0AFEDW4c0hzE3DSBDVs6Jhr5FHHB8iX9l2Q2YQCz5mGKFnYYU1ksHFHD-x8IOcXkbf6OTrClbADNeGAS8FrahDoV1-ze3aEHs1rfzlhlar4Arb0lcSrHHHXOcn1sPQBcHlUoLghd3ozPquHASCrFFrLeIemHIZvR9lkXCmhNh7P6nCdLfB8BmDhuOKJ8eS4d8Ox7tLwrizS6rtKSBnH6ESwK7f1dpskF8tu1PwD8wC02IYLvsMPhC6LKo28Zfm5Kga2WgqVpb6aUL6Qv_86SH2mQ-q6NOzuozBJ1PzI2znQKoS56YjQ5Q2NhHVpFFaMlvth_q5WAVMeJzbMcXWJSU8Nc-HvVj86zbrRF8okwue66YLreGVa2hYn60u_ZyaSVnw1TQAZ1Eq72zYPy2oXXNkByl8qwHFQihFMSrcpn8AHVHOCyjmbxjPx6_Plx4P0zd2slr6q-YK9lGQldlbyqcTqFH3hF-dGMQp1an_iL4"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/complete_quiz",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"complete_quiz"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "quiz correction",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTI1NGE3NzkwZmQxNmM0ODFlZDcwNTFjNjg0NDA2OTI5ZTVkM2I2Y2E4MDE2ZDlmMTU1MTI5NzA2MTUxZWZhNmI1ZjY3Y2YxNDNmNzIwMGUiLCJpYXQiOjE1ODk1MzMyMzIsIm5iZiI6MTU4OTUzMzIzMiwiZXhwIjoxNjIxMDY5MjMyLCJzdWIiOiIxMSIsInNjb3BlcyI6WyJ1c2VyIl19.R8ESWkUnul_VYqkjxDzQ0kzPi65SZ0kE1RKq3BHQuTakHYO4EllZMk5rntk4Etj6bg_3nSxhx6qEmqOwazmXcKYKSnWnBEypRAGTcnbNo8aTk-zdkGjSN3vYIJionGkT2r2WoJxUWfhBBc165zAE29_AzvpIAcqGrlFeM5C93hIcv4_uyD2f7sJr07c7-7FRvF0AFEDW4c0hzE3DSBDVs6Jhr5FHHB8iX9l2Q2YQCz5mGKFnYYU1ksHFHD-x8IOcXkbf6OTrClbADNeGAS8FrahDoV1-ze3aEHs1rfzlhlar4Arb0lcSrHHHXOcn1sPQBcHlUoLghd3ozPquHASCrFFrLeIemHIZvR9lkXCmhNh7P6nCdLfB8BmDhuOKJ8eS4d8Ox7tLwrizS6rtKSBnH6ESwK7f1dpskF8tu1PwD8wC02IYLvsMPhC6LKo28Zfm5Kga2WgqVpb6aUL6Qv_86SH2mQ-q6NOzuozBJ1PzI2znQKoS56YjQ5Q2NhHVpFFaMlvth_q5WAVMeJzbMcXWJSU8Nc-HvVj86zbrRF8okwue66YLreGVa2hYn60u_ZyaSVnw1TQAZ1Eq72zYPy2oXXNkByl8qwHFQihFMSrcpn8AHVHOCyjmbxjPx6_Plx4P0zd2slr6q-YK9lGQldlbyqcTqFH3hF-dGMQp1an_iL4"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/quiz_correction",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"quiz_correction"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete quiz",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGJjZTY2NWU5MDY1OWEwYzI4YzdhMDJmYjc2ZmI4MTVmODcwMjAyMjdjZDJhYWQ2YjNkZGZhMDBiYjY0M2FjNTRiNWU0MjYyN2QxNTE2Y2UiLCJpYXQiOjE1ODkzNzcwODMsIm5iZiI6MTU4OTM3NzA4MywiZXhwIjoxNjIwOTEzMDgzLCJzdWIiOiIxMCIsInNjb3BlcyI6WyJhZG1pbiJdfQ.my4LIzqVutcecvMNIrXeJLefOt9_mFAyqhM9sZq6Y5nX-_7-o5lFMhdfLPzb3Xz0uej32ufXUkjO-dOYw3JPRV3_95WQs1LrcqT1VW728bnVsfrZDadFPyL9pqph0mQ_GGAA8HWN_BHxzd8O-XYoU4HtUa5nOJvruOb40NvePRNHpiWO-AGX0yKgCF0jDEmtkrwzyYjDQCtzaRd6pRSflc7Pc2XC7okqGQY5Sr9Um28KizQXKYExmWjlAWu9IiHfiQKskfOpM2EzL1Upu1AeH2ERZSLQAT4O9SHvCHrLNvShIc2IM9m7hWUCkdhkiJOOXnJEk9TbQD_foP__bIpAGINzMeUNDDeZc5kEyuPm-yKXDfoekobupiHX2SB2S_tkq2jJWX63Z0m11v1RMms-RLxRBKhfvXaOqWzm5Hx5S6sEFxT6iNtRiwQRXJZ9c-39100re_4Ll4ENUJuD5_Yy_7mvEniRakDlbvnrfv3WMHQl5JHVHJUNHcmVLE8uZulQHXc2hW1nNGnV_Z6_AxHaNTMPGM_1__-1ONFETOHwFiZy0bejF99SiqybEr3BISYWaPSQ0T9xYYfFqJ32wn0LwKQQ2thNfbtagLnANot1CZk-fH59NAajVK5xS4WO5coDzC74u-38z6h1A2UqXfVkNTOeNwGpszupqM2ie67ruOA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/quiz/66",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"quiz",
+								"66"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Question",
+			"item": [
+				{
+					"name": "edit question",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGJjZTY2NWU5MDY1OWEwYzI4YzdhMDJmYjc2ZmI4MTVmODcwMjAyMjdjZDJhYWQ2YjNkZGZhMDBiYjY0M2FjNTRiNWU0MjYyN2QxNTE2Y2UiLCJpYXQiOjE1ODkzNzcwODMsIm5iZiI6MTU4OTM3NzA4MywiZXhwIjoxNjIwOTEzMDgzLCJzdWIiOiIxMCIsInNjb3BlcyI6WyJhZG1pbiJdfQ.my4LIzqVutcecvMNIrXeJLefOt9_mFAyqhM9sZq6Y5nX-_7-o5lFMhdfLPzb3Xz0uej32ufXUkjO-dOYw3JPRV3_95WQs1LrcqT1VW728bnVsfrZDadFPyL9pqph0mQ_GGAA8HWN_BHxzd8O-XYoU4HtUa5nOJvruOb40NvePRNHpiWO-AGX0yKgCF0jDEmtkrwzyYjDQCtzaRd6pRSflc7Pc2XC7okqGQY5Sr9Um28KizQXKYExmWjlAWu9IiHfiQKskfOpM2EzL1Upu1AeH2ERZSLQAT4O9SHvCHrLNvShIc2IM9m7hWUCkdhkiJOOXnJEk9TbQD_foP__bIpAGINzMeUNDDeZc5kEyuPm-yKXDfoekobupiHX2SB2S_tkq2jJWX63Z0m11v1RMms-RLxRBKhfvXaOqWzm5Hx5S6sEFxT6iNtRiwQRXJZ9c-39100re_4Ll4ENUJuD5_Yy_7mvEniRakDlbvnrfv3WMHQl5JHVHJUNHcmVLE8uZulQHXc2hW1nNGnV_Z6_AxHaNTMPGM_1__-1ONFETOHwFiZy0bejF99SiqybEr3BISYWaPSQ0T9xYYfFqJ32wn0LwKQQ2thNfbtagLnANot1CZk-fH59NAajVK5xS4WO5coDzC74u-38z6h1A2UqXfVkNTOeNwGpszupqM2ie67ruOA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/F:/Users/Naeim/Downloads/photo_2020-04-01_13-02-59.jpg",
+									"disabled": true
+								},
+								{
+									"key": "quiz_id",
+									"value": "2",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "lesson_id",
+									"value": "3",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "subject_id",
+									"value": "5",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "answer_file",
+									"type": "file",
+									"src": "/F:/Users/Naeim/Downloads/data.xlsx",
+									"disabled": true
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/question/711?_method=PUT",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"question",
+								"711"
+							],
+							"query": [
+								{
+									"key": "_method",
+									"value": "PUT"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add question",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGJjZTY2NWU5MDY1OWEwYzI4YzdhMDJmYjc2ZmI4MTVmODcwMjAyMjdjZDJhYWQ2YjNkZGZhMDBiYjY0M2FjNTRiNWU0MjYyN2QxNTE2Y2UiLCJpYXQiOjE1ODkzNzcwODMsIm5iZiI6MTU4OTM3NzA4MywiZXhwIjoxNjIwOTEzMDgzLCJzdWIiOiIxMCIsInNjb3BlcyI6WyJhZG1pbiJdfQ.my4LIzqVutcecvMNIrXeJLefOt9_mFAyqhM9sZq6Y5nX-_7-o5lFMhdfLPzb3Xz0uej32ufXUkjO-dOYw3JPRV3_95WQs1LrcqT1VW728bnVsfrZDadFPyL9pqph0mQ_GGAA8HWN_BHxzd8O-XYoU4HtUa5nOJvruOb40NvePRNHpiWO-AGX0yKgCF0jDEmtkrwzyYjDQCtzaRd6pRSflc7Pc2XC7okqGQY5Sr9Um28KizQXKYExmWjlAWu9IiHfiQKskfOpM2EzL1Upu1AeH2ERZSLQAT4O9SHvCHrLNvShIc2IM9m7hWUCkdhkiJOOXnJEk9TbQD_foP__bIpAGINzMeUNDDeZc5kEyuPm-yKXDfoekobupiHX2SB2S_tkq2jJWX63Z0m11v1RMms-RLxRBKhfvXaOqWzm5Hx5S6sEFxT6iNtRiwQRXJZ9c-39100re_4Ll4ENUJuD5_Yy_7mvEniRakDlbvnrfv3WMHQl5JHVHJUNHcmVLE8uZulQHXc2hW1nNGnV_Z6_AxHaNTMPGM_1__-1ONFETOHwFiZy0bejF99SiqybEr3BISYWaPSQ0T9xYYfFqJ32wn0LwKQQ2thNfbtagLnANot1CZk-fH59NAajVK5xS4WO5coDzC74u-38z6h1A2UqXfVkNTOeNwGpszupqM2ie67ruOA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "سوال شماره 4",
+									"type": "text"
+								},
+								{
+									"key": "quiz_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "lesson_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "subject_id",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/F:/Users/Naeim/Downloads/images (4).jpg"
+								},
+								{
+									"key": "answer_file",
+									"type": "file",
+									"src": "/F:/Users/Naeim/Downloads/Fonts/IRANSans5_5/IRANSans/Farsi_numerals/English to Farsi numbers help.pdf"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/question",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"question"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show questions with subject id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTQyYmJhNGQ5ZmZjZDA5YWQ2ZTI4NWYyNzFjM2Q4YjNhMzgxZDUxZDI5OWM0MzU5MWRhYjI4NjQyMGNlODljNTI5YWU3MTkxNjI2N2JhYWIiLCJpYXQiOjE1ODgwMTA0MDIsIm5iZiI6MTU4ODAxMDQwMiwiZXhwIjoxNjE5NTQ2NDAyLCJzdWIiOiIxIiwic2NvcGVzIjpbImFkbWluIl19.js0FyI34pIxS8TnOzGcleGt2GdjMnYkm6Yi4dsm48ejI7Xh-x6ajnS8r6tzDUO3aaf6xM2YvVejylG3OismLtOp3m-axzC_9pe3BgCBFi-7_BzaWRjU8kNKRcadnkYK1jcvBK8AsuvCT65OO2kRs9hJvMAStHTMn3J5h9l72S3DMSPlNxMUQ3iJgF8T2y0lX67RHWo6wTKG_kiQQjmQgtUXqQvENVkSXcQ2D037kZARN81rUdPBG42x1gYc70hMmRqtQGviMMqAfYefHahVrk5rjkJD8d6yY_IDVOIqVNfQtwEU6X5IQfuMXJKF47drLxlJ0fqD216AKVz7e8h8yMDdJdBBPcKoRiHu5avEVm7zmGwrh_-2K5jvF7NZmoTLE-nGmdH3rjTIgI2mzsd8fWEF6-R2MwuoLB8V9IphtYGTpMuDVIustykBImN8n1Zir1dGY1AvvUo4DulPe7iFQYuHe0wWjiOCa3ez5rbuuxPDyhK2jH5stDOibLo3RAldExwep5SViur7j-kjlZ-WNWvdpXxFa9A9fcW69WNbMj9B9153pRT-5HbY-Fat6gMvWTt_LUNRni7zURBDD2iWMMLragYr8rZpIy_99PSVRrTWDrH-ffWp5dLP2rreB0qG_SpDhd9sFi7aenxkDLgiJ415hJzaagNu9jY2IJHwlvpc"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://teaching.webtab.co/api/v1/question/4",
+							"protocol": "http",
+							"host": [
+								"teaching",
+								"webtab",
+								"co"
+							],
+							"path": [
+								"api",
+								"v1",
+								"question",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete question",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTQyYmJhNGQ5ZmZjZDA5YWQ2ZTI4NWYyNzFjM2Q4YjNhMzgxZDUxZDI5OWM0MzU5MWRhYjI4NjQyMGNlODljNTI5YWU3MTkxNjI2N2JhYWIiLCJpYXQiOjE1ODgwMTA0MDIsIm5iZiI6MTU4ODAxMDQwMiwiZXhwIjoxNjE5NTQ2NDAyLCJzdWIiOiIxIiwic2NvcGVzIjpbImFkbWluIl19.js0FyI34pIxS8TnOzGcleGt2GdjMnYkm6Yi4dsm48ejI7Xh-x6ajnS8r6tzDUO3aaf6xM2YvVejylG3OismLtOp3m-axzC_9pe3BgCBFi-7_BzaWRjU8kNKRcadnkYK1jcvBK8AsuvCT65OO2kRs9hJvMAStHTMn3J5h9l72S3DMSPlNxMUQ3iJgF8T2y0lX67RHWo6wTKG_kiQQjmQgtUXqQvENVkSXcQ2D037kZARN81rUdPBG42x1gYc70hMmRqtQGviMMqAfYefHahVrk5rjkJD8d6yY_IDVOIqVNfQtwEU6X5IQfuMXJKF47drLxlJ0fqD216AKVz7e8h8yMDdJdBBPcKoRiHu5avEVm7zmGwrh_-2K5jvF7NZmoTLE-nGmdH3rjTIgI2mzsd8fWEF6-R2MwuoLB8V9IphtYGTpMuDVIustykBImN8n1Zir1dGY1AvvUo4DulPe7iFQYuHe0wWjiOCa3ez5rbuuxPDyhK2jH5stDOibLo3RAldExwep5SViur7j-kjlZ-WNWvdpXxFa9A9fcW69WNbMj9B9153pRT-5HbY-Fat6gMvWTt_LUNRni7zURBDD2iWMMLragYr8rZpIy_99PSVRrTWDrH-ffWp5dLP2rreB0qG_SpDhd9sFi7aenxkDLgiJ415hJzaagNu9jY2IJHwlvpc"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://teaching.webtab.co/api/v1/question/24",
+							"protocol": "http",
+							"host": [
+								"teaching",
+								"webtab",
+								"co"
+							],
+							"path": [
+								"api",
+								"v1",
+								"question",
+								"24"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Options",
+			"item": [
+				{
+					"name": "add option",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTQyYmJhNGQ5ZmZjZDA5YWQ2ZTI4NWYyNzFjM2Q4YjNhMzgxZDUxZDI5OWM0MzU5MWRhYjI4NjQyMGNlODljNTI5YWU3MTkxNjI2N2JhYWIiLCJpYXQiOjE1ODgwMTA0MDIsIm5iZiI6MTU4ODAxMDQwMiwiZXhwIjoxNjE5NTQ2NDAyLCJzdWIiOiIxIiwic2NvcGVzIjpbImFkbWluIl19.js0FyI34pIxS8TnOzGcleGt2GdjMnYkm6Yi4dsm48ejI7Xh-x6ajnS8r6tzDUO3aaf6xM2YvVejylG3OismLtOp3m-axzC_9pe3BgCBFi-7_BzaWRjU8kNKRcadnkYK1jcvBK8AsuvCT65OO2kRs9hJvMAStHTMn3J5h9l72S3DMSPlNxMUQ3iJgF8T2y0lX67RHWo6wTKG_kiQQjmQgtUXqQvENVkSXcQ2D037kZARN81rUdPBG42x1gYc70hMmRqtQGviMMqAfYefHahVrk5rjkJD8d6yY_IDVOIqVNfQtwEU6X5IQfuMXJKF47drLxlJ0fqD216AKVz7e8h8yMDdJdBBPcKoRiHu5avEVm7zmGwrh_-2K5jvF7NZmoTLE-nGmdH3rjTIgI2mzsd8fWEF6-R2MwuoLB8V9IphtYGTpMuDVIustykBImN8n1Zir1dGY1AvvUo4DulPe7iFQYuHe0wWjiOCa3ez5rbuuxPDyhK2jH5stDOibLo3RAldExwep5SViur7j-kjlZ-WNWvdpXxFa9A9fcW69WNbMj9B9153pRT-5HbY-Fat6gMvWTt_LUNRni7zURBDD2iWMMLragYr8rZpIy_99PSVRrTWDrH-ffWp5dLP2rreB0qG_SpDhd9sFi7aenxkDLgiJ415hJzaagNu9jY2IJHwlvpc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "گزینه سه سوال شماره 1",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/F:/Users/Naeim/Downloads/download.jpg",
+									"disabled": true
+								},
+								{
+									"key": "question_id",
+									"value": "25",
+									"type": "text"
+								},
+								{
+									"key": "is_correct",
+									"value": "0",
+									"description": "0 for false , 1 for true",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://teaching.webtab.co/api/v1/option",
+							"protocol": "http",
+							"host": [
+								"teaching",
+								"webtab",
+								"co"
+							],
+							"path": [
+								"api",
+								"v1",
+								"option"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show option with question id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGJjZTY2NWU5MDY1OWEwYzI4YzdhMDJmYjc2ZmI4MTVmODcwMjAyMjdjZDJhYWQ2YjNkZGZhMDBiYjY0M2FjNTRiNWU0MjYyN2QxNTE2Y2UiLCJpYXQiOjE1ODkzNzcwODMsIm5iZiI6MTU4OTM3NzA4MywiZXhwIjoxNjIwOTEzMDgzLCJzdWIiOiIxMCIsInNjb3BlcyI6WyJhZG1pbiJdfQ.my4LIzqVutcecvMNIrXeJLefOt9_mFAyqhM9sZq6Y5nX-_7-o5lFMhdfLPzb3Xz0uej32ufXUkjO-dOYw3JPRV3_95WQs1LrcqT1VW728bnVsfrZDadFPyL9pqph0mQ_GGAA8HWN_BHxzd8O-XYoU4HtUa5nOJvruOb40NvePRNHpiWO-AGX0yKgCF0jDEmtkrwzyYjDQCtzaRd6pRSflc7Pc2XC7okqGQY5Sr9Um28KizQXKYExmWjlAWu9IiHfiQKskfOpM2EzL1Upu1AeH2ERZSLQAT4O9SHvCHrLNvShIc2IM9m7hWUCkdhkiJOOXnJEk9TbQD_foP__bIpAGINzMeUNDDeZc5kEyuPm-yKXDfoekobupiHX2SB2S_tkq2jJWX63Z0m11v1RMms-RLxRBKhfvXaOqWzm5Hx5S6sEFxT6iNtRiwQRXJZ9c-39100re_4Ll4ENUJuD5_Yy_7mvEniRakDlbvnrfv3WMHQl5JHVHJUNHcmVLE8uZulQHXc2hW1nNGnV_Z6_AxHaNTMPGM_1__-1ONFETOHwFiZy0bejF99SiqybEr3BISYWaPSQ0T9xYYfFqJ32wn0LwKQQ2thNfbtagLnANot1CZk-fH59NAajVK5xS4WO5coDzC74u-38z6h1A2UqXfVkNTOeNwGpszupqM2ie67ruOA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "https://api.amoozeshmelli.com/api/v1/option/8",
+							"protocol": "https",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"option",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete option",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTQyYmJhNGQ5ZmZjZDA5YWQ2ZTI4NWYyNzFjM2Q4YjNhMzgxZDUxZDI5OWM0MzU5MWRhYjI4NjQyMGNlODljNTI5YWU3MTkxNjI2N2JhYWIiLCJpYXQiOjE1ODgwMTA0MDIsIm5iZiI6MTU4ODAxMDQwMiwiZXhwIjoxNjE5NTQ2NDAyLCJzdWIiOiIxIiwic2NvcGVzIjpbImFkbWluIl19.js0FyI34pIxS8TnOzGcleGt2GdjMnYkm6Yi4dsm48ejI7Xh-x6ajnS8r6tzDUO3aaf6xM2YvVejylG3OismLtOp3m-axzC_9pe3BgCBFi-7_BzaWRjU8kNKRcadnkYK1jcvBK8AsuvCT65OO2kRs9hJvMAStHTMn3J5h9l72S3DMSPlNxMUQ3iJgF8T2y0lX67RHWo6wTKG_kiQQjmQgtUXqQvENVkSXcQ2D037kZARN81rUdPBG42x1gYc70hMmRqtQGviMMqAfYefHahVrk5rjkJD8d6yY_IDVOIqVNfQtwEU6X5IQfuMXJKF47drLxlJ0fqD216AKVz7e8h8yMDdJdBBPcKoRiHu5avEVm7zmGwrh_-2K5jvF7NZmoTLE-nGmdH3rjTIgI2mzsd8fWEF6-R2MwuoLB8V9IphtYGTpMuDVIustykBImN8n1Zir1dGY1AvvUo4DulPe7iFQYuHe0wWjiOCa3ez5rbuuxPDyhK2jH5stDOibLo3RAldExwep5SViur7j-kjlZ-WNWvdpXxFa9A9fcW69WNbMj9B9153pRT-5HbY-Fat6gMvWTt_LUNRni7zURBDD2iWMMLragYr8rZpIy_99PSVRrTWDrH-ffWp5dLP2rreB0qG_SpDhd9sFi7aenxkDLgiJ415hJzaagNu9jY2IJHwlvpc"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://teaching.webtab.co/api/v1/option/2",
+							"protocol": "http",
+							"host": [
+								"teaching",
+								"webtab",
+								"co"
+							],
+							"path": [
+								"api",
+								"v1",
+								"option",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit option",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGJjZTY2NWU5MDY1OWEwYzI4YzdhMDJmYjc2ZmI4MTVmODcwMjAyMjdjZDJhYWQ2YjNkZGZhMDBiYjY0M2FjNTRiNWU0MjYyN2QxNTE2Y2UiLCJpYXQiOjE1ODkzNzcwODMsIm5iZiI6MTU4OTM3NzA4MywiZXhwIjoxNjIwOTEzMDgzLCJzdWIiOiIxMCIsInNjb3BlcyI6WyJhZG1pbiJdfQ.my4LIzqVutcecvMNIrXeJLefOt9_mFAyqhM9sZq6Y5nX-_7-o5lFMhdfLPzb3Xz0uej32ufXUkjO-dOYw3JPRV3_95WQs1LrcqT1VW728bnVsfrZDadFPyL9pqph0mQ_GGAA8HWN_BHxzd8O-XYoU4HtUa5nOJvruOb40NvePRNHpiWO-AGX0yKgCF0jDEmtkrwzyYjDQCtzaRd6pRSflc7Pc2XC7okqGQY5Sr9Um28KizQXKYExmWjlAWu9IiHfiQKskfOpM2EzL1Upu1AeH2ERZSLQAT4O9SHvCHrLNvShIc2IM9m7hWUCkdhkiJOOXnJEk9TbQD_foP__bIpAGINzMeUNDDeZc5kEyuPm-yKXDfoekobupiHX2SB2S_tkq2jJWX63Z0m11v1RMms-RLxRBKhfvXaOqWzm5Hx5S6sEFxT6iNtRiwQRXJZ9c-39100re_4Ll4ENUJuD5_Yy_7mvEniRakDlbvnrfv3WMHQl5JHVHJUNHcmVLE8uZulQHXc2hW1nNGnV_Z6_AxHaNTMPGM_1__-1ONFETOHwFiZy0bejF99SiqybEr3BISYWaPSQ0T9xYYfFqJ32wn0LwKQQ2thNfbtagLnANot1CZk-fH59NAajVK5xS4WO5coDzC74u-38z6h1A2UqXfVkNTOeNwGpszupqM2ie67ruOA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "سشیشسی",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/F:/Users/Naeim/Downloads/photo_2020-04-01_13-02-59.jpg"
+								},
+								{
+									"key": "question_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "is_correct",
+									"value": "1",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/option/3?_method=PUT",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"option",
+								"3"
+							],
+							"query": [
+								{
+									"key": "_method",
+									"value": "PUT"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Parts",
+			"item": [
+				{
+					"name": "add part",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGJjZTY2NWU5MDY1OWEwYzI4YzdhMDJmYjc2ZmI4MTVmODcwMjAyMjdjZDJhYWQ2YjNkZGZhMDBiYjY0M2FjNTRiNWU0MjYyN2QxNTE2Y2UiLCJpYXQiOjE1ODkzNzcwODMsIm5iZiI6MTU4OTM3NzA4MywiZXhwIjoxNjIwOTEzMDgzLCJzdWIiOiIxMCIsInNjb3BlcyI6WyJhZG1pbiJdfQ.my4LIzqVutcecvMNIrXeJLefOt9_mFAyqhM9sZq6Y5nX-_7-o5lFMhdfLPzb3Xz0uej32ufXUkjO-dOYw3JPRV3_95WQs1LrcqT1VW728bnVsfrZDadFPyL9pqph0mQ_GGAA8HWN_BHxzd8O-XYoU4HtUa5nOJvruOb40NvePRNHpiWO-AGX0yKgCF0jDEmtkrwzyYjDQCtzaRd6pRSflc7Pc2XC7okqGQY5Sr9Um28KizQXKYExmWjlAWu9IiHfiQKskfOpM2EzL1Upu1AeH2ERZSLQAT4O9SHvCHrLNvShIc2IM9m7hWUCkdhkiJOOXnJEk9TbQD_foP__bIpAGINzMeUNDDeZc5kEyuPm-yKXDfoekobupiHX2SB2S_tkq2jJWX63Z0m11v1RMms-RLxRBKhfvXaOqWzm5Hx5S6sEFxT6iNtRiwQRXJZ9c-39100re_4Ll4ENUJuD5_Yy_7mvEniRakDlbvnrfv3WMHQl5JHVHJUNHcmVLE8uZulQHXc2hW1nNGnV_Z6_AxHaNTMPGM_1__-1ONFETOHwFiZy0bejF99SiqybEr3BISYWaPSQ0T9xYYfFqJ32wn0LwKQQ2thNfbtagLnANot1CZk-fH59NAajVK5xS4WO5coDzC74u-38z6h1A2UqXfVkNTOeNwGpszupqM2ie67ruOA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "section_id",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "question_id",
+									"value": "22",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "order",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "video_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "video_path",
+									"value": "",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/part",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"part"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show part with section id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZTc1YjZjNmQ2MzBkMGE4ZDFlZTBhZjZkZWM2MjVmMmVjYzEzOWE5NzQwMTA0N2IwMDAwNTNiZmY3YjZhMmMxMGJmZTU1YTAyMmUyNDkxZWIiLCJpYXQiOjE1OTMzNjk1NjgsIm5iZiI6MTU5MzM2OTU2OCwiZXhwIjoxNjI0OTA1NTY4LCJzdWIiOiI2MyIsInNjb3BlcyI6WyJ1c2VyIl19.1GPKjjumg4hBI32Nkmv1kLCizwd1CGQiHiPMVX3DJDD5SqIhqT7kEFXgFn5DF9B97E1VV1rm_DNsR3lNyqAsvBAfSr3ERYzc4WmPWkYGHBR8WcxPhks7GECRMUjOCxi30bScwWvoU9zVaxd-HS4VlBtjtdLtFF1glnYzaJ_mlZ1wr855VOB2v2U7VW6isamALdrBNfCXIDw8wEWs0fmrxewa06Icg_Y2GW2Hse3pPWoNT0PWkSC5tHwfQSr24d5iBo9Km_WCiutli1HJjB2oY9X6EBX__B0AMAzvYem1c4W32UiuTtDFWcAWTEN1E-gLX5s3iCh4TzSkyQXnoBnFIgh8WtL4l1THdU1rA9iJ9PX8pk0IdJlPvYJRSklYzQyIasAG9TIYqfRlT9zsR5EzoWUmGbwnQ-coQtZGVPN0g7psnRSZLnPp-Qd5ab8kiCuxpja9eJbNdvWYrOb7363T6ii83E5kGAT7C_Caeiud5T9LrpV4CxELyvrx492gUTE23d2CFkfXQmfpq4Eu1evS9cvJVldr8aQ543scppYk1legoeRHUSgfI_nHDhQZfE0-zXDBUr1gND16tMMcbA8HOmwJNlcYUPp-ChmAM_McEpPcRDbQoBkOwjhVkQY-MYvAkHg5bFuxnYQuQoATaV-6pldDr9r1JdZHcb0mM8JwzU8"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/part/7",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"part",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show part with section id user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTI1NGE3NzkwZmQxNmM0ODFlZDcwNTFjNjg0NDA2OTI5ZTVkM2I2Y2E4MDE2ZDlmMTU1MTI5NzA2MTUxZWZhNmI1ZjY3Y2YxNDNmNzIwMGUiLCJpYXQiOjE1ODk1MzMyMzIsIm5iZiI6MTU4OTUzMzIzMiwiZXhwIjoxNjIxMDY5MjMyLCJzdWIiOiIxMSIsInNjb3BlcyI6WyJ1c2VyIl19.R8ESWkUnul_VYqkjxDzQ0kzPi65SZ0kE1RKq3BHQuTakHYO4EllZMk5rntk4Etj6bg_3nSxhx6qEmqOwazmXcKYKSnWnBEypRAGTcnbNo8aTk-zdkGjSN3vYIJionGkT2r2WoJxUWfhBBc165zAE29_AzvpIAcqGrlFeM5C93hIcv4_uyD2f7sJr07c7-7FRvF0AFEDW4c0hzE3DSBDVs6Jhr5FHHB8iX9l2Q2YQCz5mGKFnYYU1ksHFHD-x8IOcXkbf6OTrClbADNeGAS8FrahDoV1-ze3aEHs1rfzlhlar4Arb0lcSrHHHXOcn1sPQBcHlUoLghd3ozPquHASCrFFrLeIemHIZvR9lkXCmhNh7P6nCdLfB8BmDhuOKJ8eS4d8Ox7tLwrizS6rtKSBnH6ESwK7f1dpskF8tu1PwD8wC02IYLvsMPhC6LKo28Zfm5Kga2WgqVpb6aUL6Qv_86SH2mQ-q6NOzuozBJ1PzI2znQKoS56YjQ5Q2NhHVpFFaMlvth_q5WAVMeJzbMcXWJSU8Nc-HvVj86zbrRF8okwue66YLreGVa2hYn60u_ZyaSVnw1TQAZ1Eq72zYPy2oXXNkByl8qwHFQihFMSrcpn8AHVHOCyjmbxjPx6_Plx4P0zd2slr6q-YK9lGQldlbyqcTqFH3hF-dGMQp1an_iL4"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "https://api.amoozeshmelli.com/api/v1/user_part/168",
+							"protocol": "https",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user_part",
+								"168"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete part",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTQyYmJhNGQ5ZmZjZDA5YWQ2ZTI4NWYyNzFjM2Q4YjNhMzgxZDUxZDI5OWM0MzU5MWRhYjI4NjQyMGNlODljNTI5YWU3MTkxNjI2N2JhYWIiLCJpYXQiOjE1ODgwMTA0MDIsIm5iZiI6MTU4ODAxMDQwMiwiZXhwIjoxNjE5NTQ2NDAyLCJzdWIiOiIxIiwic2NvcGVzIjpbImFkbWluIl19.js0FyI34pIxS8TnOzGcleGt2GdjMnYkm6Yi4dsm48ejI7Xh-x6ajnS8r6tzDUO3aaf6xM2YvVejylG3OismLtOp3m-axzC_9pe3BgCBFi-7_BzaWRjU8kNKRcadnkYK1jcvBK8AsuvCT65OO2kRs9hJvMAStHTMn3J5h9l72S3DMSPlNxMUQ3iJgF8T2y0lX67RHWo6wTKG_kiQQjmQgtUXqQvENVkSXcQ2D037kZARN81rUdPBG42x1gYc70hMmRqtQGviMMqAfYefHahVrk5rjkJD8d6yY_IDVOIqVNfQtwEU6X5IQfuMXJKF47drLxlJ0fqD216AKVz7e8h8yMDdJdBBPcKoRiHu5avEVm7zmGwrh_-2K5jvF7NZmoTLE-nGmdH3rjTIgI2mzsd8fWEF6-R2MwuoLB8V9IphtYGTpMuDVIustykBImN8n1Zir1dGY1AvvUo4DulPe7iFQYuHe0wWjiOCa3ez5rbuuxPDyhK2jH5stDOibLo3RAldExwep5SViur7j-kjlZ-WNWvdpXxFa9A9fcW69WNbMj9B9153pRT-5HbY-Fat6gMvWTt_LUNRni7zURBDD2iWMMLragYr8rZpIy_99PSVRrTWDrH-ffWp5dLP2rreB0qG_SpDhd9sFi7aenxkDLgiJ415hJzaagNu9jY2IJHwlvpc"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://teaching.webtab.co/api/v1/part/3",
+							"protocol": "http",
+							"host": [
+								"teaching",
+								"webtab",
+								"co"
+							],
+							"path": [
+								"api",
+								"v1",
+								"part",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit part",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTQyYmJhNGQ5ZmZjZDA5YWQ2ZTI4NWYyNzFjM2Q4YjNhMzgxZDUxZDI5OWM0MzU5MWRhYjI4NjQyMGNlODljNTI5YWU3MTkxNjI2N2JhYWIiLCJpYXQiOjE1ODgwMTA0MDIsIm5iZiI6MTU4ODAxMDQwMiwiZXhwIjoxNjE5NTQ2NDAyLCJzdWIiOiIxIiwic2NvcGVzIjpbImFkbWluIl19.js0FyI34pIxS8TnOzGcleGt2GdjMnYkm6Yi4dsm48ejI7Xh-x6ajnS8r6tzDUO3aaf6xM2YvVejylG3OismLtOp3m-axzC_9pe3BgCBFi-7_BzaWRjU8kNKRcadnkYK1jcvBK8AsuvCT65OO2kRs9hJvMAStHTMn3J5h9l72S3DMSPlNxMUQ3iJgF8T2y0lX67RHWo6wTKG_kiQQjmQgtUXqQvENVkSXcQ2D037kZARN81rUdPBG42x1gYc70hMmRqtQGviMMqAfYefHahVrk5rjkJD8d6yY_IDVOIqVNfQtwEU6X5IQfuMXJKF47drLxlJ0fqD216AKVz7e8h8yMDdJdBBPcKoRiHu5avEVm7zmGwrh_-2K5jvF7NZmoTLE-nGmdH3rjTIgI2mzsd8fWEF6-R2MwuoLB8V9IphtYGTpMuDVIustykBImN8n1Zir1dGY1AvvUo4DulPe7iFQYuHe0wWjiOCa3ez5rbuuxPDyhK2jH5stDOibLo3RAldExwep5SViur7j-kjlZ-WNWvdpXxFa9A9fcW69WNbMj9B9153pRT-5HbY-Fat6gMvWTt_LUNRni7zURBDD2iWMMLragYr8rZpIy_99PSVRrTWDrH-ffWp5dLP2rreB0qG_SpDhd9sFi7aenxkDLgiJ415hJzaagNu9jY2IJHwlvpc"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "section_id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "video",
+									"type": "file",
+									"src": [],
+									"disabled": true
+								},
+								{
+									"key": "question_id",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "order",
+									"value": "2",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://teaching.webtab.co/api/v1/part/1?_method=PUT",
+							"protocol": "http",
+							"host": [
+								"teaching",
+								"webtab",
+								"co"
+							],
+							"path": [
+								"api",
+								"v1",
+								"part",
+								"1"
+							],
+							"query": [
+								{
+									"key": "_method",
+									"value": "PUT"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Advertise",
+			"item": [
+				{
+					"name": "edit advertise",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGJjZTY2NWU5MDY1OWEwYzI4YzdhMDJmYjc2ZmI4MTVmODcwMjAyMjdjZDJhYWQ2YjNkZGZhMDBiYjY0M2FjNTRiNWU0MjYyN2QxNTE2Y2UiLCJpYXQiOjE1ODkzNzcwODMsIm5iZiI6MTU4OTM3NzA4MywiZXhwIjoxNjIwOTEzMDgzLCJzdWIiOiIxMCIsInNjb3BlcyI6WyJhZG1pbiJdfQ.my4LIzqVutcecvMNIrXeJLefOt9_mFAyqhM9sZq6Y5nX-_7-o5lFMhdfLPzb3Xz0uej32ufXUkjO-dOYw3JPRV3_95WQs1LrcqT1VW728bnVsfrZDadFPyL9pqph0mQ_GGAA8HWN_BHxzd8O-XYoU4HtUa5nOJvruOb40NvePRNHpiWO-AGX0yKgCF0jDEmtkrwzyYjDQCtzaRd6pRSflc7Pc2XC7okqGQY5Sr9Um28KizQXKYExmWjlAWu9IiHfiQKskfOpM2EzL1Upu1AeH2ERZSLQAT4O9SHvCHrLNvShIc2IM9m7hWUCkdhkiJOOXnJEk9TbQD_foP__bIpAGINzMeUNDDeZc5kEyuPm-yKXDfoekobupiHX2SB2S_tkq2jJWX63Z0m11v1RMms-RLxRBKhfvXaOqWzm5Hx5S6sEFxT6iNtRiwQRXJZ9c-39100re_4Ll4ENUJuD5_Yy_7mvEniRakDlbvnrfv3WMHQl5JHVHJUNHcmVLE8uZulQHXc2hW1nNGnV_Z6_AxHaNTMPGM_1__-1ONFETOHwFiZy0bejF99SiqybEr3BISYWaPSQ0T9xYYfFqJ32wn0LwKQQ2thNfbtagLnANot1CZk-fH59NAajVK5xS4WO5coDzC74u-38z6h1A2UqXfVkNTOeNwGpszupqM2ie67ruOA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "سشیشسی",
+									"type": "text"
+								},
+								{
+									"key": "video",
+									"type": "file",
+									"src": "/F:/Users/Naeim/Downloads/092bad890f8d6e9f18a699b415d19032.mp4"
+								},
+								{
+									"key": "gift",
+									"value": "2000",
+									"type": "text"
+								},
+								{
+									"key": "count",
+									"value": "30",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "50000",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/advertise/3?_method=PUT",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"advertise",
+								"3"
+							],
+							"query": [
+								{
+									"key": "_method",
+									"value": "PUT"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add addvertise",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGJjZTY2NWU5MDY1OWEwYzI4YzdhMDJmYjc2ZmI4MTVmODcwMjAyMjdjZDJhYWQ2YjNkZGZhMDBiYjY0M2FjNTRiNWU0MjYyN2QxNTE2Y2UiLCJpYXQiOjE1ODkzNzcwODMsIm5iZiI6MTU4OTM3NzA4MywiZXhwIjoxNjIwOTEzMDgzLCJzdWIiOiIxMCIsInNjb3BlcyI6WyJhZG1pbiJdfQ.my4LIzqVutcecvMNIrXeJLefOt9_mFAyqhM9sZq6Y5nX-_7-o5lFMhdfLPzb3Xz0uej32ufXUkjO-dOYw3JPRV3_95WQs1LrcqT1VW728bnVsfrZDadFPyL9pqph0mQ_GGAA8HWN_BHxzd8O-XYoU4HtUa5nOJvruOb40NvePRNHpiWO-AGX0yKgCF0jDEmtkrwzyYjDQCtzaRd6pRSflc7Pc2XC7okqGQY5Sr9Um28KizQXKYExmWjlAWu9IiHfiQKskfOpM2EzL1Upu1AeH2ERZSLQAT4O9SHvCHrLNvShIc2IM9m7hWUCkdhkiJOOXnJEk9TbQD_foP__bIpAGINzMeUNDDeZc5kEyuPm-yKXDfoekobupiHX2SB2S_tkq2jJWX63Z0m11v1RMms-RLxRBKhfvXaOqWzm5Hx5S6sEFxT6iNtRiwQRXJZ9c-39100re_4Ll4ENUJuD5_Yy_7mvEniRakDlbvnrfv3WMHQl5JHVHJUNHcmVLE8uZulQHXc2hW1nNGnV_Z6_AxHaNTMPGM_1__-1ONFETOHwFiZy0bejF99SiqybEr3BISYWaPSQ0T9xYYfFqJ32wn0LwKQQ2thNfbtagLnANot1CZk-fH59NAajVK5xS4WO5coDzC74u-38z6h1A2UqXfVkNTOeNwGpszupqM2ie67ruOA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "تست تبلیغات 1",
+									"type": "text"
+								},
+								{
+									"key": "video",
+									"type": "file",
+									"src": "/E:/Bolt/Bolt.avi"
+								},
+								{
+									"key": "gift",
+									"value": "2000",
+									"type": "text"
+								},
+								{
+									"key": "count",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "2000000",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/advertise",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"advertise"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_random_advertise",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGJjZTY2NWU5MDY1OWEwYzI4YzdhMDJmYjc2ZmI4MTVmODcwMjAyMjdjZDJhYWQ2YjNkZGZhMDBiYjY0M2FjNTRiNWU0MjYyN2QxNTE2Y2UiLCJpYXQiOjE1ODkzNzcwODMsIm5iZiI6MTU4OTM3NzA4MywiZXhwIjoxNjIwOTEzMDgzLCJzdWIiOiIxMCIsInNjb3BlcyI6WyJhZG1pbiJdfQ.my4LIzqVutcecvMNIrXeJLefOt9_mFAyqhM9sZq6Y5nX-_7-o5lFMhdfLPzb3Xz0uej32ufXUkjO-dOYw3JPRV3_95WQs1LrcqT1VW728bnVsfrZDadFPyL9pqph0mQ_GGAA8HWN_BHxzd8O-XYoU4HtUa5nOJvruOb40NvePRNHpiWO-AGX0yKgCF0jDEmtkrwzyYjDQCtzaRd6pRSflc7Pc2XC7okqGQY5Sr9Um28KizQXKYExmWjlAWu9IiHfiQKskfOpM2EzL1Upu1AeH2ERZSLQAT4O9SHvCHrLNvShIc2IM9m7hWUCkdhkiJOOXnJEk9TbQD_foP__bIpAGINzMeUNDDeZc5kEyuPm-yKXDfoekobupiHX2SB2S_tkq2jJWX63Z0m11v1RMms-RLxRBKhfvXaOqWzm5Hx5S6sEFxT6iNtRiwQRXJZ9c-39100re_4Ll4ENUJuD5_Yy_7mvEniRakDlbvnrfv3WMHQl5JHVHJUNHcmVLE8uZulQHXc2hW1nNGnV_Z6_AxHaNTMPGM_1__-1ONFETOHwFiZy0bejF99SiqybEr3BISYWaPSQ0T9xYYfFqJ32wn0LwKQQ2thNfbtagLnANot1CZk-fH59NAajVK5xS4WO5coDzC74u-38z6h1A2UqXfVkNTOeNwGpszupqM2ie67ruOA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "تست تبلیغات 1",
+									"type": "text"
+								},
+								{
+									"key": "video",
+									"type": "file",
+									"src": "/E:/Bolt/Bolt.avi"
+								},
+								{
+									"key": "gift",
+									"value": "2000",
+									"type": "text"
+								},
+								{
+									"key": "count",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "2000000",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/advertise",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"advertise"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add addvertise Copy",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGJjZTY2NWU5MDY1OWEwYzI4YzdhMDJmYjc2ZmI4MTVmODcwMjAyMjdjZDJhYWQ2YjNkZGZhMDBiYjY0M2FjNTRiNWU0MjYyN2QxNTE2Y2UiLCJpYXQiOjE1ODkzNzcwODMsIm5iZiI6MTU4OTM3NzA4MywiZXhwIjoxNjIwOTEzMDgzLCJzdWIiOiIxMCIsInNjb3BlcyI6WyJhZG1pbiJdfQ.my4LIzqVutcecvMNIrXeJLefOt9_mFAyqhM9sZq6Y5nX-_7-o5lFMhdfLPzb3Xz0uej32ufXUkjO-dOYw3JPRV3_95WQs1LrcqT1VW728bnVsfrZDadFPyL9pqph0mQ_GGAA8HWN_BHxzd8O-XYoU4HtUa5nOJvruOb40NvePRNHpiWO-AGX0yKgCF0jDEmtkrwzyYjDQCtzaRd6pRSflc7Pc2XC7okqGQY5Sr9Um28KizQXKYExmWjlAWu9IiHfiQKskfOpM2EzL1Upu1AeH2ERZSLQAT4O9SHvCHrLNvShIc2IM9m7hWUCkdhkiJOOXnJEk9TbQD_foP__bIpAGINzMeUNDDeZc5kEyuPm-yKXDfoekobupiHX2SB2S_tkq2jJWX63Z0m11v1RMms-RLxRBKhfvXaOqWzm5Hx5S6sEFxT6iNtRiwQRXJZ9c-39100re_4Ll4ENUJuD5_Yy_7mvEniRakDlbvnrfv3WMHQl5JHVHJUNHcmVLE8uZulQHXc2hW1nNGnV_Z6_AxHaNTMPGM_1__-1ONFETOHwFiZy0bejF99SiqybEr3BISYWaPSQ0T9xYYfFqJ32wn0LwKQQ2thNfbtagLnANot1CZk-fH59NAajVK5xS4WO5coDzC74u-38z6h1A2UqXfVkNTOeNwGpszupqM2ie67ruOA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "تست تبلیغات 1",
+									"type": "text"
+								},
+								{
+									"key": "video",
+									"type": "file",
+									"src": "/E:/Bolt/Bolt.avi"
+								},
+								{
+									"key": "gift",
+									"value": "2000",
+									"type": "text"
+								},
+								{
+									"key": "count",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "2000000",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/advertise",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"advertise"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show advertise",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGJjZTY2NWU5MDY1OWEwYzI4YzdhMDJmYjc2ZmI4MTVmODcwMjAyMjdjZDJhYWQ2YjNkZGZhMDBiYjY0M2FjNTRiNWU0MjYyN2QxNTE2Y2UiLCJpYXQiOjE1ODkzNzcwODMsIm5iZiI6MTU4OTM3NzA4MywiZXhwIjoxNjIwOTEzMDgzLCJzdWIiOiIxMCIsInNjb3BlcyI6WyJhZG1pbiJdfQ.my4LIzqVutcecvMNIrXeJLefOt9_mFAyqhM9sZq6Y5nX-_7-o5lFMhdfLPzb3Xz0uej32ufXUkjO-dOYw3JPRV3_95WQs1LrcqT1VW728bnVsfrZDadFPyL9pqph0mQ_GGAA8HWN_BHxzd8O-XYoU4HtUa5nOJvruOb40NvePRNHpiWO-AGX0yKgCF0jDEmtkrwzyYjDQCtzaRd6pRSflc7Pc2XC7okqGQY5Sr9Um28KizQXKYExmWjlAWu9IiHfiQKskfOpM2EzL1Upu1AeH2ERZSLQAT4O9SHvCHrLNvShIc2IM9m7hWUCkdhkiJOOXnJEk9TbQD_foP__bIpAGINzMeUNDDeZc5kEyuPm-yKXDfoekobupiHX2SB2S_tkq2jJWX63Z0m11v1RMms-RLxRBKhfvXaOqWzm5Hx5S6sEFxT6iNtRiwQRXJZ9c-39100re_4Ll4ENUJuD5_Yy_7mvEniRakDlbvnrfv3WMHQl5JHVHJUNHcmVLE8uZulQHXc2hW1nNGnV_Z6_AxHaNTMPGM_1__-1ONFETOHwFiZy0bejF99SiqybEr3BISYWaPSQ0T9xYYfFqJ32wn0LwKQQ2thNfbtagLnANot1CZk-fH59NAajVK5xS4WO5coDzC74u-38z6h1A2UqXfVkNTOeNwGpszupqM2ie67ruOA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/advertise",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"advertise"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete advertise",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGJjZTY2NWU5MDY1OWEwYzI4YzdhMDJmYjc2ZmI4MTVmODcwMjAyMjdjZDJhYWQ2YjNkZGZhMDBiYjY0M2FjNTRiNWU0MjYyN2QxNTE2Y2UiLCJpYXQiOjE1ODkzNzcwODMsIm5iZiI6MTU4OTM3NzA4MywiZXhwIjoxNjIwOTEzMDgzLCJzdWIiOiIxMCIsInNjb3BlcyI6WyJhZG1pbiJdfQ.my4LIzqVutcecvMNIrXeJLefOt9_mFAyqhM9sZq6Y5nX-_7-o5lFMhdfLPzb3Xz0uej32ufXUkjO-dOYw3JPRV3_95WQs1LrcqT1VW728bnVsfrZDadFPyL9pqph0mQ_GGAA8HWN_BHxzd8O-XYoU4HtUa5nOJvruOb40NvePRNHpiWO-AGX0yKgCF0jDEmtkrwzyYjDQCtzaRd6pRSflc7Pc2XC7okqGQY5Sr9Um28KizQXKYExmWjlAWu9IiHfiQKskfOpM2EzL1Upu1AeH2ERZSLQAT4O9SHvCHrLNvShIc2IM9m7hWUCkdhkiJOOXnJEk9TbQD_foP__bIpAGINzMeUNDDeZc5kEyuPm-yKXDfoekobupiHX2SB2S_tkq2jJWX63Z0m11v1RMms-RLxRBKhfvXaOqWzm5Hx5S6sEFxT6iNtRiwQRXJZ9c-39100re_4Ll4ENUJuD5_Yy_7mvEniRakDlbvnrfv3WMHQl5JHVHJUNHcmVLE8uZulQHXc2hW1nNGnV_Z6_AxHaNTMPGM_1__-1ONFETOHwFiZy0bejF99SiqybEr3BISYWaPSQ0T9xYYfFqJ32wn0LwKQQ2thNfbtagLnANot1CZk-fH59NAajVK5xS4WO5coDzC74u-38z6h1A2UqXfVkNTOeNwGpszupqM2ie67ruOA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/advertise/2",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"advertise",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "People",
+			"item": [
+				{
+					"name": "search people",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGJjZTY2NWU5MDY1OWEwYzI4YzdhMDJmYjc2ZmI4MTVmODcwMjAyMjdjZDJhYWQ2YjNkZGZhMDBiYjY0M2FjNTRiNWU0MjYyN2QxNTE2Y2UiLCJpYXQiOjE1ODkzNzcwODMsIm5iZiI6MTU4OTM3NzA4MywiZXhwIjoxNjIwOTEzMDgzLCJzdWIiOiIxMCIsInNjb3BlcyI6WyJhZG1pbiJdfQ.my4LIzqVutcecvMNIrXeJLefOt9_mFAyqhM9sZq6Y5nX-_7-o5lFMhdfLPzb3Xz0uej32ufXUkjO-dOYw3JPRV3_95WQs1LrcqT1VW728bnVsfrZDadFPyL9pqph0mQ_GGAA8HWN_BHxzd8O-XYoU4HtUa5nOJvruOb40NvePRNHpiWO-AGX0yKgCF0jDEmtkrwzyYjDQCtzaRd6pRSflc7Pc2XC7okqGQY5Sr9Um28KizQXKYExmWjlAWu9IiHfiQKskfOpM2EzL1Upu1AeH2ERZSLQAT4O9SHvCHrLNvShIc2IM9m7hWUCkdhkiJOOXnJEk9TbQD_foP__bIpAGINzMeUNDDeZc5kEyuPm-yKXDfoekobupiHX2SB2S_tkq2jJWX63Z0m11v1RMms-RLxRBKhfvXaOqWzm5Hx5S6sEFxT6iNtRiwQRXJZ9c-39100re_4Ll4ENUJuD5_Yy_7mvEniRakDlbvnrfv3WMHQl5JHVHJUNHcmVLE8uZulQHXc2hW1nNGnV_Z6_AxHaNTMPGM_1__-1ONFETOHwFiZy0bejF99SiqybEr3BISYWaPSQ0T9xYYfFqJ32wn0LwKQQ2thNfbtagLnANot1CZk-fH59NAajVK5xS4WO5coDzC74u-38z6h1A2UqXfVkNTOeNwGpszupqM2ie67ruOA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "people",
+									"value": "ا",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/search_people",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"search_people"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add people",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGJjZTY2NWU5MDY1OWEwYzI4YzdhMDJmYjc2ZmI4MTVmODcwMjAyMjdjZDJhYWQ2YjNkZGZhMDBiYjY0M2FjNTRiNWU0MjYyN2QxNTE2Y2UiLCJpYXQiOjE1ODkzNzcwODMsIm5iZiI6MTU4OTM3NzA4MywiZXhwIjoxNjIwOTEzMDgzLCJzdWIiOiIxMCIsInNjb3BlcyI6WyJhZG1pbiJdfQ.my4LIzqVutcecvMNIrXeJLefOt9_mFAyqhM9sZq6Y5nX-_7-o5lFMhdfLPzb3Xz0uej32ufXUkjO-dOYw3JPRV3_95WQs1LrcqT1VW728bnVsfrZDadFPyL9pqph0mQ_GGAA8HWN_BHxzd8O-XYoU4HtUa5nOJvruOb40NvePRNHpiWO-AGX0yKgCF0jDEmtkrwzyYjDQCtzaRd6pRSflc7Pc2XC7okqGQY5Sr9Um28KizQXKYExmWjlAWu9IiHfiQKskfOpM2EzL1Upu1AeH2ERZSLQAT4O9SHvCHrLNvShIc2IM9m7hWUCkdhkiJOOXnJEk9TbQD_foP__bIpAGINzMeUNDDeZc5kEyuPm-yKXDfoekobupiHX2SB2S_tkq2jJWX63Z0m11v1RMms-RLxRBKhfvXaOqWzm5Hx5S6sEFxT6iNtRiwQRXJZ9c-39100re_4Ll4ENUJuD5_Yy_7mvEniRakDlbvnrfv3WMHQl5JHVHJUNHcmVLE8uZulQHXc2hW1nNGnV_Z6_AxHaNTMPGM_1__-1ONFETOHwFiZy0bejF99SiqybEr3BISYWaPSQ0T9xYYfFqJ32wn0LwKQQ2thNfbtagLnANot1CZk-fH59NAajVK5xS4WO5coDzC74u-38z6h1A2UqXfVkNTOeNwGpszupqM2ie67ruOA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "نعیم صفایی",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/people",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"people"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show percent",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGJjZTY2NWU5MDY1OWEwYzI4YzdhMDJmYjc2ZmI4MTVmODcwMjAyMjdjZDJhYWQ2YjNkZGZhMDBiYjY0M2FjNTRiNWU0MjYyN2QxNTE2Y2UiLCJpYXQiOjE1ODkzNzcwODMsIm5iZiI6MTU4OTM3NzA4MywiZXhwIjoxNjIwOTEzMDgzLCJzdWIiOiIxMCIsInNjb3BlcyI6WyJhZG1pbiJdfQ.my4LIzqVutcecvMNIrXeJLefOt9_mFAyqhM9sZq6Y5nX-_7-o5lFMhdfLPzb3Xz0uej32ufXUkjO-dOYw3JPRV3_95WQs1LrcqT1VW728bnVsfrZDadFPyL9pqph0mQ_GGAA8HWN_BHxzd8O-XYoU4HtUa5nOJvruOb40NvePRNHpiWO-AGX0yKgCF0jDEmtkrwzyYjDQCtzaRd6pRSflc7Pc2XC7okqGQY5Sr9Um28KizQXKYExmWjlAWu9IiHfiQKskfOpM2EzL1Upu1AeH2ERZSLQAT4O9SHvCHrLNvShIc2IM9m7hWUCkdhkiJOOXnJEk9TbQD_foP__bIpAGINzMeUNDDeZc5kEyuPm-yKXDfoekobupiHX2SB2S_tkq2jJWX63Z0m11v1RMms-RLxRBKhfvXaOqWzm5Hx5S6sEFxT6iNtRiwQRXJZ9c-39100re_4Ll4ENUJuD5_Yy_7mvEniRakDlbvnrfv3WMHQl5JHVHJUNHcmVLE8uZulQHXc2hW1nNGnV_Z6_AxHaNTMPGM_1__-1ONFETOHwFiZy0bejF99SiqybEr3BISYWaPSQ0T9xYYfFqJ32wn0LwKQQ2thNfbtagLnANot1CZk-fH59NAajVK5xS4WO5coDzC74u-38z6h1A2UqXfVkNTOeNwGpszupqM2ie67ruOA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/percent/1",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"percent",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete people",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGJjZTY2NWU5MDY1OWEwYzI4YzdhMDJmYjc2ZmI4MTVmODcwMjAyMjdjZDJhYWQ2YjNkZGZhMDBiYjY0M2FjNTRiNWU0MjYyN2QxNTE2Y2UiLCJpYXQiOjE1ODkzNzcwODMsIm5iZiI6MTU4OTM3NzA4MywiZXhwIjoxNjIwOTEzMDgzLCJzdWIiOiIxMCIsInNjb3BlcyI6WyJhZG1pbiJdfQ.my4LIzqVutcecvMNIrXeJLefOt9_mFAyqhM9sZq6Y5nX-_7-o5lFMhdfLPzb3Xz0uej32ufXUkjO-dOYw3JPRV3_95WQs1LrcqT1VW728bnVsfrZDadFPyL9pqph0mQ_GGAA8HWN_BHxzd8O-XYoU4HtUa5nOJvruOb40NvePRNHpiWO-AGX0yKgCF0jDEmtkrwzyYjDQCtzaRd6pRSflc7Pc2XC7okqGQY5Sr9Um28KizQXKYExmWjlAWu9IiHfiQKskfOpM2EzL1Upu1AeH2ERZSLQAT4O9SHvCHrLNvShIc2IM9m7hWUCkdhkiJOOXnJEk9TbQD_foP__bIpAGINzMeUNDDeZc5kEyuPm-yKXDfoekobupiHX2SB2S_tkq2jJWX63Z0m11v1RMms-RLxRBKhfvXaOqWzm5Hx5S6sEFxT6iNtRiwQRXJZ9c-39100re_4Ll4ENUJuD5_Yy_7mvEniRakDlbvnrfv3WMHQl5JHVHJUNHcmVLE8uZulQHXc2hW1nNGnV_Z6_AxHaNTMPGM_1__-1ONFETOHwFiZy0bejF99SiqybEr3BISYWaPSQ0T9xYYfFqJ32wn0LwKQQ2thNfbtagLnANot1CZk-fH59NAajVK5xS4WO5coDzC74u-38z6h1A2UqXfVkNTOeNwGpszupqM2ie67ruOA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/people/2",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"people",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add percent",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGJjZTY2NWU5MDY1OWEwYzI4YzdhMDJmYjc2ZmI4MTVmODcwMjAyMjdjZDJhYWQ2YjNkZGZhMDBiYjY0M2FjNTRiNWU0MjYyN2QxNTE2Y2UiLCJpYXQiOjE1ODkzNzcwODMsIm5iZiI6MTU4OTM3NzA4MywiZXhwIjoxNjIwOTEzMDgzLCJzdWIiOiIxMCIsInNjb3BlcyI6WyJhZG1pbiJdfQ.my4LIzqVutcecvMNIrXeJLefOt9_mFAyqhM9sZq6Y5nX-_7-o5lFMhdfLPzb3Xz0uej32ufXUkjO-dOYw3JPRV3_95WQs1LrcqT1VW728bnVsfrZDadFPyL9pqph0mQ_GGAA8HWN_BHxzd8O-XYoU4HtUa5nOJvruOb40NvePRNHpiWO-AGX0yKgCF0jDEmtkrwzyYjDQCtzaRd6pRSflc7Pc2XC7okqGQY5Sr9Um28KizQXKYExmWjlAWu9IiHfiQKskfOpM2EzL1Upu1AeH2ERZSLQAT4O9SHvCHrLNvShIc2IM9m7hWUCkdhkiJOOXnJEk9TbQD_foP__bIpAGINzMeUNDDeZc5kEyuPm-yKXDfoekobupiHX2SB2S_tkq2jJWX63Z0m11v1RMms-RLxRBKhfvXaOqWzm5Hx5S6sEFxT6iNtRiwQRXJZ9c-39100re_4Ll4ENUJuD5_Yy_7mvEniRakDlbvnrfv3WMHQl5JHVHJUNHcmVLE8uZulQHXc2hW1nNGnV_Z6_AxHaNTMPGM_1__-1ONFETOHwFiZy0bejF99SiqybEr3BISYWaPSQ0T9xYYfFqJ32wn0LwKQQ2thNfbtagLnANot1CZk-fH59NAajVK5xS4WO5coDzC74u-38z6h1A2UqXfVkNTOeNwGpszupqM2ie67ruOA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "percent",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "people_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "quiz_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "product_id",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "section_id",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "advertise_id",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/add_percent",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"add_percent"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit percent",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGJjZTY2NWU5MDY1OWEwYzI4YzdhMDJmYjc2ZmI4MTVmODcwMjAyMjdjZDJhYWQ2YjNkZGZhMDBiYjY0M2FjNTRiNWU0MjYyN2QxNTE2Y2UiLCJpYXQiOjE1ODkzNzcwODMsIm5iZiI6MTU4OTM3NzA4MywiZXhwIjoxNjIwOTEzMDgzLCJzdWIiOiIxMCIsInNjb3BlcyI6WyJhZG1pbiJdfQ.my4LIzqVutcecvMNIrXeJLefOt9_mFAyqhM9sZq6Y5nX-_7-o5lFMhdfLPzb3Xz0uej32ufXUkjO-dOYw3JPRV3_95WQs1LrcqT1VW728bnVsfrZDadFPyL9pqph0mQ_GGAA8HWN_BHxzd8O-XYoU4HtUa5nOJvruOb40NvePRNHpiWO-AGX0yKgCF0jDEmtkrwzyYjDQCtzaRd6pRSflc7Pc2XC7okqGQY5Sr9Um28KizQXKYExmWjlAWu9IiHfiQKskfOpM2EzL1Upu1AeH2ERZSLQAT4O9SHvCHrLNvShIc2IM9m7hWUCkdhkiJOOXnJEk9TbQD_foP__bIpAGINzMeUNDDeZc5kEyuPm-yKXDfoekobupiHX2SB2S_tkq2jJWX63Z0m11v1RMms-RLxRBKhfvXaOqWzm5Hx5S6sEFxT6iNtRiwQRXJZ9c-39100re_4Ll4ENUJuD5_Yy_7mvEniRakDlbvnrfv3WMHQl5JHVHJUNHcmVLE8uZulQHXc2hW1nNGnV_Z6_AxHaNTMPGM_1__-1ONFETOHwFiZy0bejF99SiqybEr3BISYWaPSQ0T9xYYfFqJ32wn0LwKQQ2thNfbtagLnANot1CZk-fH59NAajVK5xS4WO5coDzC74u-38z6h1A2UqXfVkNTOeNwGpszupqM2ie67ruOA"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"people_id\" : 1,\n\t\"percent\" : 20,\n\t\"quiz_id\" : 13,\n\t\"product_id\" : 1,\n\t\"section_id\" : 3,\n\t\"advertise_id\" : 5\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/percent/1",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"percent",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete percent",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGJjZTY2NWU5MDY1OWEwYzI4YzdhMDJmYjc2ZmI4MTVmODcwMjAyMjdjZDJhYWQ2YjNkZGZhMDBiYjY0M2FjNTRiNWU0MjYyN2QxNTE2Y2UiLCJpYXQiOjE1ODkzNzcwODMsIm5iZiI6MTU4OTM3NzA4MywiZXhwIjoxNjIwOTEzMDgzLCJzdWIiOiIxMCIsInNjb3BlcyI6WyJhZG1pbiJdfQ.my4LIzqVutcecvMNIrXeJLefOt9_mFAyqhM9sZq6Y5nX-_7-o5lFMhdfLPzb3Xz0uej32ufXUkjO-dOYw3JPRV3_95WQs1LrcqT1VW728bnVsfrZDadFPyL9pqph0mQ_GGAA8HWN_BHxzd8O-XYoU4HtUa5nOJvruOb40NvePRNHpiWO-AGX0yKgCF0jDEmtkrwzyYjDQCtzaRd6pRSflc7Pc2XC7okqGQY5Sr9Um28KizQXKYExmWjlAWu9IiHfiQKskfOpM2EzL1Upu1AeH2ERZSLQAT4O9SHvCHrLNvShIc2IM9m7hWUCkdhkiJOOXnJEk9TbQD_foP__bIpAGINzMeUNDDeZc5kEyuPm-yKXDfoekobupiHX2SB2S_tkq2jJWX63Z0m11v1RMms-RLxRBKhfvXaOqWzm5Hx5S6sEFxT6iNtRiwQRXJZ9c-39100re_4Ll4ENUJuD5_Yy_7mvEniRakDlbvnrfv3WMHQl5JHVHJUNHcmVLE8uZulQHXc2hW1nNGnV_Z6_AxHaNTMPGM_1__-1ONFETOHwFiZy0bejF99SiqybEr3BISYWaPSQ0T9xYYfFqJ32wn0LwKQQ2thNfbtagLnANot1CZk-fH59NAajVK5xS4WO5coDzC74u-38z6h1A2UqXfVkNTOeNwGpszupqM2ie67ruOA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/percent/2",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"percent",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "add product",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGJjZTY2NWU5MDY1OWEwYzI4YzdhMDJmYjc2ZmI4MTVmODcwMjAyMjdjZDJhYWQ2YjNkZGZhMDBiYjY0M2FjNTRiNWU0MjYyN2QxNTE2Y2UiLCJpYXQiOjE1ODkzNzcwODMsIm5iZiI6MTU4OTM3NzA4MywiZXhwIjoxNjIwOTEzMDgzLCJzdWIiOiIxMCIsInNjb3BlcyI6WyJhZG1pbiJdfQ.my4LIzqVutcecvMNIrXeJLefOt9_mFAyqhM9sZq6Y5nX-_7-o5lFMhdfLPzb3Xz0uej32ufXUkjO-dOYw3JPRV3_95WQs1LrcqT1VW728bnVsfrZDadFPyL9pqph0mQ_GGAA8HWN_BHxzd8O-XYoU4HtUa5nOJvruOb40NvePRNHpiWO-AGX0yKgCF0jDEmtkrwzyYjDQCtzaRd6pRSflc7Pc2XC7okqGQY5Sr9Um28KizQXKYExmWjlAWu9IiHfiQKskfOpM2EzL1Upu1AeH2ERZSLQAT4O9SHvCHrLNvShIc2IM9m7hWUCkdhkiJOOXnJEk9TbQD_foP__bIpAGINzMeUNDDeZc5kEyuPm-yKXDfoekobupiHX2SB2S_tkq2jJWX63Z0m11v1RMms-RLxRBKhfvXaOqWzm5Hx5S6sEFxT6iNtRiwQRXJZ9c-39100re_4Ll4ENUJuD5_Yy_7mvEniRakDlbvnrfv3WMHQl5JHVHJUNHcmVLE8uZulQHXc2hW1nNGnV_Z6_AxHaNTMPGM_1__-1ONFETOHwFiZy0bejF99SiqybEr3BISYWaPSQ0T9xYYfFqJ32wn0LwKQQ2thNfbtagLnANot1CZk-fH59NAajVK5xS4WO5coDzC74u-38z6h1A2UqXfVkNTOeNwGpszupqM2ie67ruOA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "کالای مشترک اول دبستان و دهم تجربی",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/F:/Users/Naeim/Downloads/computer.png"
+								},
+								{
+									"key": "price",
+									"value": "2000",
+									"type": "text"
+								},
+								{
+									"key": "gift_price",
+									"value": "25000",
+									"type": "text"
+								},
+								{
+									"key": "grade_ids",
+									"value": "1,2",
+									"type": "text"
+								},
+								{
+									"key": "download_able",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/F:/Users/Naeim/Downloads/-2078400766_-211366.docx"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/product",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buy product",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYjA1NzhmNDA3ZDJjYTU5OTEzYTRjODg2ZGY4MDc5NDY3NDQ0OTQ0YjkzMDA3Njc4MzEyNTU1YjU3NWU0NTQ1NzZkMDg1OTMzZDE4YmJkZWUiLCJpYXQiOjE1OTE1NDk3NDEsIm5iZiI6MTU5MTU0OTc0MSwiZXhwIjoxNjIzMDg1NzQxLCJzdWIiOiI0MiIsInNjb3BlcyI6WyJ1c2VyIl19.c7AqrNNsht-CDhcd2G1N1DvnfpMqpZ69CbrQDX8HQBM5RsLr8AyoA-vM02jqvjLiz4F1pX-tEAdYXkikJsEl-eTPN5X824JXtzH6ZDrReiFGwHeT9XEzZ1fklnokVV3YjwoqqVR3ts7JaS6ZXI2HV3ivXKn2cg84C4YL1K-0GJzKNAsxbxnFp-kcmteYcYBYv77to2A1Gz0bjEDGlx7zTsfTgnvPXF0XpO0USz4PR5XROMqp9KlnY743BF_NlBc875HBLoL8Q5vEk3vByT8PLdFHQcC6TkZMbBAsOKi8Q30D54NuosmY_qDnjQ4GRZ5JfImbBUOBwPygiFoz3_q6NvUNHLQsMmH_8CDtnOy7aAbyY5X1Ge5yV-GuJFMJ-rpcRTfAqVO-LNXIn2gFnkBLf1AXY9mFxiG9-lyH5xNPbFzpGmYjzpKiuhYOqmn_JbarRTjXUarDwcwzYzA2nGrZiuWKNZoTxtFdo-D0Q_t7OrCKYEW6NbzWlncWQ2zDi0jQK7ELM6AkxV2fNsSSX64DF0dUkxsYX0CdQAaHBzDE_pZS7XON_8e7X_dJn3idJXjTeRVS1qtI0r1zx7iTwMHG92Jh0eNJvyIc6H2uatwR_avlWwms-cutHhd6tawA2DRhZMWjw0ZyQKVThIwikowgCD0bNH_0b-31IBGIeMDi2mY"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "product_id",
+									"value": "13",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/buy_product",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"buy_product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get products with user id - user",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYjA1NzhmNDA3ZDJjYTU5OTEzYTRjODg2ZGY4MDc5NDY3NDQ0OTQ0YjkzMDA3Njc4MzEyNTU1YjU3NWU0NTQ1NzZkMDg1OTMzZDE4YmJkZWUiLCJpYXQiOjE1OTE1NDk3NDEsIm5iZiI6MTU5MTU0OTc0MSwiZXhwIjoxNjIzMDg1NzQxLCJzdWIiOiI0MiIsInNjb3BlcyI6WyJ1c2VyIl19.c7AqrNNsht-CDhcd2G1N1DvnfpMqpZ69CbrQDX8HQBM5RsLr8AyoA-vM02jqvjLiz4F1pX-tEAdYXkikJsEl-eTPN5X824JXtzH6ZDrReiFGwHeT9XEzZ1fklnokVV3YjwoqqVR3ts7JaS6ZXI2HV3ivXKn2cg84C4YL1K-0GJzKNAsxbxnFp-kcmteYcYBYv77to2A1Gz0bjEDGlx7zTsfTgnvPXF0XpO0USz4PR5XROMqp9KlnY743BF_NlBc875HBLoL8Q5vEk3vByT8PLdFHQcC6TkZMbBAsOKi8Q30D54NuosmY_qDnjQ4GRZ5JfImbBUOBwPygiFoz3_q6NvUNHLQsMmH_8CDtnOy7aAbyY5X1Ge5yV-GuJFMJ-rpcRTfAqVO-LNXIn2gFnkBLf1AXY9mFxiG9-lyH5xNPbFzpGmYjzpKiuhYOqmn_JbarRTjXUarDwcwzYzA2nGrZiuWKNZoTxtFdo-D0Q_t7OrCKYEW6NbzWlncWQ2zDi0jQK7ELM6AkxV2fNsSSX64DF0dUkxsYX0CdQAaHBzDE_pZS7XON_8e7X_dJn3idJXjTeRVS1qtI0r1zx7iTwMHG92Jh0eNJvyIc6H2uatwR_avlWwms-cutHhd6tawA2DRhZMWjw0ZyQKVThIwikowgCD0bNH_0b-31IBGIeMDi2mY"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/u_products",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"u_products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get products with grade id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGJjZTY2NWU5MDY1OWEwYzI4YzdhMDJmYjc2ZmI4MTVmODcwMjAyMjdjZDJhYWQ2YjNkZGZhMDBiYjY0M2FjNTRiNWU0MjYyN2QxNTE2Y2UiLCJpYXQiOjE1ODkzNzcwODMsIm5iZiI6MTU4OTM3NzA4MywiZXhwIjoxNjIwOTEzMDgzLCJzdWIiOiIxMCIsInNjb3BlcyI6WyJhZG1pbiJdfQ.my4LIzqVutcecvMNIrXeJLefOt9_mFAyqhM9sZq6Y5nX-_7-o5lFMhdfLPzb3Xz0uej32ufXUkjO-dOYw3JPRV3_95WQs1LrcqT1VW728bnVsfrZDadFPyL9pqph0mQ_GGAA8HWN_BHxzd8O-XYoU4HtUa5nOJvruOb40NvePRNHpiWO-AGX0yKgCF0jDEmtkrwzyYjDQCtzaRd6pRSflc7Pc2XC7okqGQY5Sr9Um28KizQXKYExmWjlAWu9IiHfiQKskfOpM2EzL1Upu1AeH2ERZSLQAT4O9SHvCHrLNvShIc2IM9m7hWUCkdhkiJOOXnJEk9TbQD_foP__bIpAGINzMeUNDDeZc5kEyuPm-yKXDfoekobupiHX2SB2S_tkq2jJWX63Z0m11v1RMms-RLxRBKhfvXaOqWzm5Hx5S6sEFxT6iNtRiwQRXJZ9c-39100re_4Ll4ENUJuD5_Yy_7mvEniRakDlbvnrfv3WMHQl5JHVHJUNHcmVLE8uZulQHXc2hW1nNGnV_Z6_AxHaNTMPGM_1__-1ONFETOHwFiZy0bejF99SiqybEr3BISYWaPSQ0T9xYYfFqJ32wn0LwKQQ2thNfbtagLnANot1CZk-fH59NAajVK5xS4WO5coDzC74u-38z6h1A2UqXfVkNTOeNwGpszupqM2ie67ruOA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/products/1",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get products with lesson id",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTI1NGE3NzkwZmQxNmM0ODFlZDcwNTFjNjg0NDA2OTI5ZTVkM2I2Y2E4MDE2ZDlmMTU1MTI5NzA2MTUxZWZhNmI1ZjY3Y2YxNDNmNzIwMGUiLCJpYXQiOjE1ODk1MzMyMzIsIm5iZiI6MTU4OTUzMzIzMiwiZXhwIjoxNjIxMDY5MjMyLCJzdWIiOiIxMSIsInNjb3BlcyI6WyJ1c2VyIl19.R8ESWkUnul_VYqkjxDzQ0kzPi65SZ0kE1RKq3BHQuTakHYO4EllZMk5rntk4Etj6bg_3nSxhx6qEmqOwazmXcKYKSnWnBEypRAGTcnbNo8aTk-zdkGjSN3vYIJionGkT2r2WoJxUWfhBBc165zAE29_AzvpIAcqGrlFeM5C93hIcv4_uyD2f7sJr07c7-7FRvF0AFEDW4c0hzE3DSBDVs6Jhr5FHHB8iX9l2Q2YQCz5mGKFnYYU1ksHFHD-x8IOcXkbf6OTrClbADNeGAS8FrahDoV1-ze3aEHs1rfzlhlar4Arb0lcSrHHHXOcn1sPQBcHlUoLghd3ozPquHASCrFFrLeIemHIZvR9lkXCmhNh7P6nCdLfB8BmDhuOKJ8eS4d8Ox7tLwrizS6rtKSBnH6ESwK7f1dpskF8tu1PwD8wC02IYLvsMPhC6LKo28Zfm5Kga2WgqVpb6aUL6Qv_86SH2mQ-q6NOzuozBJ1PzI2znQKoS56YjQ5Q2NhHVpFFaMlvth_q5WAVMeJzbMcXWJSU8Nc-HvVj86zbrRF8okwue66YLreGVa2hYn60u_ZyaSVnw1TQAZ1Eq72zYPy2oXXNkByl8qwHFQihFMSrcpn8AHVHOCyjmbxjPx6_Plx4P0zd2slr6q-YK9lGQldlbyqcTqFH3hF-dGMQp1an_iL4"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "lesson_id",
+									"value": "13",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/u_products_with_lesson",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"u_products_with_lesson"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get products - admin",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGJjZTY2NWU5MDY1OWEwYzI4YzdhMDJmYjc2ZmI4MTVmODcwMjAyMjdjZDJhYWQ2YjNkZGZhMDBiYjY0M2FjNTRiNWU0MjYyN2QxNTE2Y2UiLCJpYXQiOjE1ODkzNzcwODMsIm5iZiI6MTU4OTM3NzA4MywiZXhwIjoxNjIwOTEzMDgzLCJzdWIiOiIxMCIsInNjb3BlcyI6WyJhZG1pbiJdfQ.my4LIzqVutcecvMNIrXeJLefOt9_mFAyqhM9sZq6Y5nX-_7-o5lFMhdfLPzb3Xz0uej32ufXUkjO-dOYw3JPRV3_95WQs1LrcqT1VW728bnVsfrZDadFPyL9pqph0mQ_GGAA8HWN_BHxzd8O-XYoU4HtUa5nOJvruOb40NvePRNHpiWO-AGX0yKgCF0jDEmtkrwzyYjDQCtzaRd6pRSflc7Pc2XC7okqGQY5Sr9Um28KizQXKYExmWjlAWu9IiHfiQKskfOpM2EzL1Upu1AeH2ERZSLQAT4O9SHvCHrLNvShIc2IM9m7hWUCkdhkiJOOXnJEk9TbQD_foP__bIpAGINzMeUNDDeZc5kEyuPm-yKXDfoekobupiHX2SB2S_tkq2jJWX63Z0m11v1RMms-RLxRBKhfvXaOqWzm5Hx5S6sEFxT6iNtRiwQRXJZ9c-39100re_4Ll4ENUJuD5_Yy_7mvEniRakDlbvnrfv3WMHQl5JHVHJUNHcmVLE8uZulQHXc2hW1nNGnV_Z6_AxHaNTMPGM_1__-1ONFETOHwFiZy0bejF99SiqybEr3BISYWaPSQ0T9xYYfFqJ32wn0LwKQQ2thNfbtagLnANot1CZk-fH59NAajVK5xS4WO5coDzC74u-38z6h1A2UqXfVkNTOeNwGpszupqM2ie67ruOA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/products",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Comments",
+			"item": [
+				{
+					"name": "add comment",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTI1NGE3NzkwZmQxNmM0ODFlZDcwNTFjNjg0NDA2OTI5ZTVkM2I2Y2E4MDE2ZDlmMTU1MTI5NzA2MTUxZWZhNmI1ZjY3Y2YxNDNmNzIwMGUiLCJpYXQiOjE1ODk1MzMyMzIsIm5iZiI6MTU4OTUzMzIzMiwiZXhwIjoxNjIxMDY5MjMyLCJzdWIiOiIxMSIsInNjb3BlcyI6WyJ1c2VyIl19.R8ESWkUnul_VYqkjxDzQ0kzPi65SZ0kE1RKq3BHQuTakHYO4EllZMk5rntk4Etj6bg_3nSxhx6qEmqOwazmXcKYKSnWnBEypRAGTcnbNo8aTk-zdkGjSN3vYIJionGkT2r2WoJxUWfhBBc165zAE29_AzvpIAcqGrlFeM5C93hIcv4_uyD2f7sJr07c7-7FRvF0AFEDW4c0hzE3DSBDVs6Jhr5FHHB8iX9l2Q2YQCz5mGKFnYYU1ksHFHD-x8IOcXkbf6OTrClbADNeGAS8FrahDoV1-ze3aEHs1rfzlhlar4Arb0lcSrHHHXOcn1sPQBcHlUoLghd3ozPquHASCrFFrLeIemHIZvR9lkXCmhNh7P6nCdLfB8BmDhuOKJ8eS4d8Ox7tLwrizS6rtKSBnH6ESwK7f1dpskF8tu1PwD8wC02IYLvsMPhC6LKo28Zfm5Kga2WgqVpb6aUL6Qv_86SH2mQ-q6NOzuozBJ1PzI2znQKoS56YjQ5Q2NhHVpFFaMlvth_q5WAVMeJzbMcXWJSU8Nc-HvVj86zbrRF8okwue66YLreGVa2hYn60u_ZyaSVnw1TQAZ1Eq72zYPy2oXXNkByl8qwHFQihFMSrcpn8AHVHOCyjmbxjPx6_Plx4P0zd2slr6q-YK9lGQldlbyqcTqFH3hF-dGMQp1an_iL4"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "section_id",
+									"value": "9",
+									"type": "text"
+								},
+								{
+									"key": "text",
+									"value": "کامنت تست اولیه",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/comment",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"comment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get comments with section id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTI1NGE3NzkwZmQxNmM0ODFlZDcwNTFjNjg0NDA2OTI5ZTVkM2I2Y2E4MDE2ZDlmMTU1MTI5NzA2MTUxZWZhNmI1ZjY3Y2YxNDNmNzIwMGUiLCJpYXQiOjE1ODk1MzMyMzIsIm5iZiI6MTU4OTUzMzIzMiwiZXhwIjoxNjIxMDY5MjMyLCJzdWIiOiIxMSIsInNjb3BlcyI6WyJ1c2VyIl19.R8ESWkUnul_VYqkjxDzQ0kzPi65SZ0kE1RKq3BHQuTakHYO4EllZMk5rntk4Etj6bg_3nSxhx6qEmqOwazmXcKYKSnWnBEypRAGTcnbNo8aTk-zdkGjSN3vYIJionGkT2r2WoJxUWfhBBc165zAE29_AzvpIAcqGrlFeM5C93hIcv4_uyD2f7sJr07c7-7FRvF0AFEDW4c0hzE3DSBDVs6Jhr5FHHB8iX9l2Q2YQCz5mGKFnYYU1ksHFHD-x8IOcXkbf6OTrClbADNeGAS8FrahDoV1-ze3aEHs1rfzlhlar4Arb0lcSrHHHXOcn1sPQBcHlUoLghd3ozPquHASCrFFrLeIemHIZvR9lkXCmhNh7P6nCdLfB8BmDhuOKJ8eS4d8Ox7tLwrizS6rtKSBnH6ESwK7f1dpskF8tu1PwD8wC02IYLvsMPhC6LKo28Zfm5Kga2WgqVpb6aUL6Qv_86SH2mQ-q6NOzuozBJ1PzI2znQKoS56YjQ5Q2NhHVpFFaMlvth_q5WAVMeJzbMcXWJSU8Nc-HvVj86zbrRF8okwue66YLreGVa2hYn60u_ZyaSVnw1TQAZ1Eq72zYPy2oXXNkByl8qwHFQihFMSrcpn8AHVHOCyjmbxjPx6_Plx4P0zd2slr6q-YK9lGQldlbyqcTqFH3hF-dGMQp1an_iL4"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://api.amoozeshmelli.com/api/v1/comment/1",
+							"protocol": "http",
+							"host": [
+								"api",
+								"amoozeshmelli",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"comment",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Slider",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTI1NGE3NzkwZmQxNmM0ODFlZDcwNTFjNjg0NDA2OTI5ZTVkM2I2Y2E4MDE2ZDlmMTU1MTI5NzA2MTUxZWZhNmI1ZjY3Y2YxNDNmNzIwMGUiLCJpYXQiOjE1ODk1MzMyMzIsIm5iZiI6MTU4OTUzMzIzMiwiZXhwIjoxNjIxMDY5MjMyLCJzdWIiOiIxMSIsInNjb3BlcyI6WyJ1c2VyIl19.R8ESWkUnul_VYqkjxDzQ0kzPi65SZ0kE1RKq3BHQuTakHYO4EllZMk5rntk4Etj6bg_3nSxhx6qEmqOwazmXcKYKSnWnBEypRAGTcnbNo8aTk-zdkGjSN3vYIJionGkT2r2WoJxUWfhBBc165zAE29_AzvpIAcqGrlFeM5C93hIcv4_uyD2f7sJr07c7-7FRvF0AFEDW4c0hzE3DSBDVs6Jhr5FHHB8iX9l2Q2YQCz5mGKFnYYU1ksHFHD-x8IOcXkbf6OTrClbADNeGAS8FrahDoV1-ze3aEHs1rfzlhlar4Arb0lcSrHHHXOcn1sPQBcHlUoLghd3ozPquHASCrFFrLeIemHIZvR9lkXCmhNh7P6nCdLfB8BmDhuOKJ8eS4d8Ox7tLwrizS6rtKSBnH6ESwK7f1dpskF8tu1PwD8wC02IYLvsMPhC6LKo28Zfm5Kga2WgqVpb6aUL6Qv_86SH2mQ-q6NOzuozBJ1PzI2znQKoS56YjQ5Q2NhHVpFFaMlvth_q5WAVMeJzbMcXWJSU8Nc-HvVj86zbrRF8okwue66YLreGVa2hYn60u_ZyaSVnw1TQAZ1Eq72zYPy2oXXNkByl8qwHFQihFMSrcpn8AHVHOCyjmbxjPx6_Plx4P0zd2slr6q-YK9lGQldlbyqcTqFH3hF-dGMQp1an_iL4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://api.amoozeshmelli.com/api/v1/sliders",
+					"protocol": "http",
+					"host": [
+						"api",
+						"amoozeshmelli",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"sliders"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
